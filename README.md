@@ -1,4 +1,6 @@
-# Replication package — *Do Corporate Environmental Capability Scores Track Carbon Outcomes?*
+# Replication package
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20814674.svg)](https://doi.org/10.5281/zenodo.20814674) — *Do Corporate Environmental Capability Scores Track Carbon Outcomes?*
 
 Chalak, Keshtkar & Bidollahkhany. This package reproduces every table in the paper.
 

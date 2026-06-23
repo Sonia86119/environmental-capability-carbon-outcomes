@@ -11,6 +11,7 @@ authors:
 year: 2026
 license: MIT
 repository-code: "https://github.com/Sonia86119/environmental-capability-carbon-outcomes"
+doi: "10.5281/zenodo.20814674"
 abstract: >-
   Replication code for the cross-sectional study of whether corporate
   environmental capability scores track physical carbon outcomes across
