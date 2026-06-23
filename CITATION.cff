@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the paper below."
+title: "Replication package: Do Corporate Environmental Capability Scores Track Carbon Outcomes?"
+authors:
+  - family-names: Chalak
+    given-names: Sonia
+  - family-names: Keshtkar
+    given-names: Sadegh
+  - family-names: Bidollahkhany
+    given-names: Fereidoon
+year: 2026
+license: MIT
+repository-code: "https://github.com/Sonia86119/environmental-capability-carbon-outcomes"
+abstract: >-
+  Replication code for the cross-sectional study of whether corporate
+  environmental capability scores track physical carbon outcomes across
+  4,329 global firms. Regenerates all tables from LSEG/Refinitiv data and
+  includes a variable dictionary, a data-access protocol, and a synthetic
+  demonstration dataset. Raw LSEG/Refinitiv data are proprietary and are
+  not included.

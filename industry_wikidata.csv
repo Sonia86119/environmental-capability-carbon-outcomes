@@ -1,0 +1,1264 @@
+Identifier,industry_raw,sector
+EVNV.VI,"electric power generation, transmission and distribution",Utilities
+OMVV.VI,petroleum industry,Energy
+STRV.VI,construction,Industrials
+UCB.BR,pharmaceutical industry,Health Care
+ALVG.DE,insurance industry,Financials
+BYWGnx.DE,retail,Consumer Discretionary
+DBKGn.DE,financial services,Financials
+KRNG.DE,industrial sector,Industrials
+LEIG.DE,industrial manufacturing,Industrials
+G1AG.DE,food industry,Consumer Staples
+PSHG_p.DE,holding company,Financials
+TUI1n.DE,tourism industry,Consumer Discretionary
+RWEG.DE,energy supply,Other
+TKAG.DE,iron and steel industry,Materials
+CIEA.MC,automotive industry,Consumer Discretionary
+IDR.MC,IT service management,Other
+ANA.MC,sporting activities,Other
+ELE.MC,energy supply,Other
+FAE.MC,pharmaceutical industry,Health Care
+IBE.MC,electricity supply company,Utilities
+MAP.MC,insurance,Financials
+SCYR.MC,construction company,Industrials
+TPT.L,retail,Consumer Discretionary
+PROFb.ST,metal industry,Materials
+CHBE.PA,construction of pleasure boats,Industrials
+AM.PA,aerospace industry,Industrials
+FOUG.PA,public works,Other
+OREP.PA,wholesale trade (inter-company trade) of perfumery and beauty products,Other
+MANP.PA,manufacture of lifting and handling equipment,Industrials
+MWDP.PA,capital participation,Other
+LAGA.PA,media industry,Communication
+ALEXA.PA,pulp and paper industry,Materials
+JEN.BR,laundry,Other
+RCOP.PA,spirits industry,Other
+ADEN.S,human resource management,Other
+KGH.WA,mining,Materials
+AHT.L,equipment rental,Other
+BWY.L,house-building,Other
+CLDN.L,other credit granting,Financials
+CBRO.L,financial services,Financials
+CPG.L,food service,Consumer Staples
+CRDA.L,chemical industry,Materials
+DGE.L,beverage industry,Consumer Staples
+INCH.L,automotive industry,Consumer Discretionary
+KGF.L,retail,Consumer Discretionary
+LWDB.L,stock market,Other
+HHFGn.DE,logistics,Industrials
+MNKS.L,investment management,Financials
+NXT.L,retail,Consumer Discretionary
+OXIG.L,industrial sector,Industrials
+SPL1.WA,banking,Financials
+PRU.L,insurance industry,Financials
+SJP.L,finance,Financials
+NWG.L,financial services,Financials
+SVS.L,real estate industry,Real Estate
+SFR.L,iron and steel industry,Materials
+TW.L,house-building,Other
+TSCO.L,retail chain,Consumer Discretionary
+AFGA.OL,construction,Industrials
+ABBN.S,robotics,Other
+BELL.S,agribusiness,Other
+BOS.S,wholesale,Other
+VELD.BR,Wholesale trade (business-to-business) of clothing and footwear,Other
+BUCN.S,mechanical engineering,Industrials
+GURN.S,chemical industry,Materials
+LUKN.S,financial services,Financials
+BMA.OL,Manufacture of veneer sheets and wood-based panels,Industrials
+ROTLV.BX,financial sector,Financials
+SNBN.S,public sector,Other
+SOFF.OL,water transport,Industrials
+CPS.WA,telecommunications,Communication
+KNOW.ST,information technology,Information Technology
+SPIE.PA,higher education,Other
+AAF.L,telecommunications,Communication
+PHNX.L,insurance,Financials
+SYSR.ST,industrial parts manufacturer,Industrials
+BNOR.OL,petroleum industry,Energy
+AG1G.DE,e-commerce,Consumer Discretionary
+VLS.PA,research and development in biotechnology,Health Care
+KIPO.BR,holding company activities,Financials
+ADVG.DE,Wholesale (intercompany trade) of electronic and telecommunications equipment and parts,Communication
+GETP.PA,transport,Industrials
+DIDA.MC,retail,Consumer Discretionary
+VWS.CO,wind power industry,Utilities
+ACPP.WA,information technology,Information Technology
+BIOGb.ST,wholesale (inter-company trade) of pharmaceutical products,Health Care
+KNE1L.VL,petroleum industry,Energy
+JENGn.DE,Precision engineering and optical industry,Industrials
+IBAB.BR,health technology,Health Care
+WPP.L,marketing,Other
+MT.AS,iron and steel industry,Materials
+CMBN.S,financial services,Financials
+LEGn.DE,real estate industry,Real Estate
+BMED.MI,financial services,Financials
+GLTN.PA,activities of head offices,Other
+FER.MC,transport,Industrials
+WOSG.L,jewelry,Other
+IQTr.AT,video game industry,Other
+DNP.WA,trade,Other
+ALKb.CO,pharmaceutical industry,Health Care
+SPGP.CO,plastics industry,Materials
+NOVOb.CO,pharmaceutical industry,Health Care
+PAALb.CO,construction industry,Industrials
+AALB.AS,metal treatment and coating,Materials
+BAMN.AS,construction,Industrials
+CORB.AS,manufacture of sugar,Industrials
+TWKNc.AS,digital media,Communication
+TRNT.L,rail transport,Industrials
+SECTb.ST,wholesale (inter-company trade) of pharmaceutical products,Health Care
+AAL.L,mining,Materials
+MDBI.MI,business and other management consulting,Other
+EMBI.MI,financial sector,Financials
+RECI.MI,wholesale (inter-company trade) of pharmaceutical products,Health Care
+SPMI.MI,list of oilfield service companies,Energy
+LDOF.MI,aircraft industry,Industrials
+FDEV.L,video game industry,Other
+ROVI.MC,pharmaceutical industry,Health Care
+VGP1.BR,commercial property,Real Estate
+KER.WA,agriculture,Consumer Staples
+ATCOa.ST,industrial manufacturing,Industrials
+BOL.ST,zinc industry,Other
+ELUXb.ST,home appliance industry,Other
+MSONb.ST,food industry,Consumer Staples
+ERICb.ST,information and communications technology,Information Technology
+NCCb.ST,construction company,Industrials
+RATOb.ST,private equity firm,Other
+ISOS.PA,market research,Other
+SAND.ST,iron and steel industry,Materials
+FSKRS.HE,industrial design,Industrials
+HUH1V.HE,product packaging industry,Other
+METSB.HE,pulp and paper industry,Materials
+VOLCARb.ST,automotive industry,Consumer Discretionary
+ODLO.OL,oil well drilling,Energy
+NOHOP.HE,restaurant industry,Consumer Discretionary
+ASY.PA,engineering,Industrials
+ASMI.AS,semiconductor industry,Information Technology
+ITH.L,oil and gas extraction,Energy
+RAAG.DE,industrial manufacturing,Industrials
+IFXGn.DE,semiconductor industry,Information Technology
+PSPN.S,real estate company,Real Estate
+RWS.L,video game industry,Other
+DIGI.BX,telecommunications,Communication
+SPECI.L,optics,Other
+LSG.OL,seafood,Consumer Staples
+DEBS.L,clothing industry,Other
+N91.L,financial services,Financials
+PETSP.L,retail,Consumer Discretionary
+ASRNL.AS,insurance industry,Financials
+IVUG.DE,public transport,Industrials
+IGG.L,financial services,Financials
+EURBr.AT,economics of banking,Financials
+WIX.L,retail,Consumer Discretionary
+GMAB.CO,biotechnology,Health Care
+IFCN.S,industrial manufacturing,Industrials
+EQTAB.ST,investment management,Financials
+WIZZ.L,air transport,Industrials
+VZUG.S,wholesale trade (business-to-business) of household appliances,Consumer Staples
+BPTB.L,educational technology,Information Technology
+LPPP.WA,retail,Consumer Discretionary
+TLGG.H,real estate company,Real Estate
+JCDX.PA,activities of head offices,Other
+TLXGn.DE,financial services,Financials
+ROSNP.BX,petroleum industry,Energy
+DOCS.L,fashion,Consumer Discretionary
+CASP.PA,retail,Consumer Discretionary
+GTT.PA,engineering,Industrials
+ALSO.PA,activities of head offices,Other
+GYL.OL,publishing,Communication
+AUTOA.L,e-commerce,Consumer Discretionary
+PEABb.ST,construction industry,Industrials
+BOPr.AT,financial services,Financials
+BYIT.L,industrial manufacturing,Industrials
+ORY.MC,genomics,Other
+BMAX.ST,retail,Consumer Discretionary
+MIPS.ST,industrial manufacturing,Industrials
+EKF.L,health care industry,Health Care
+ATRAV.HE,food industry,Consumer Staples
+ENAG.MC,energy industry,Other
+LAEP.PA,aircraft and space construction,Industrials
+LECN.S,battery industry,Other
+AIR.PA,aircraft construction,Industrials
+ENGP.WA,distribution network operator for electricity,Utilities
+RAIVV.HE,food industry,Consumer Staples
+EDNn.MI,energy supply,Other
+SATG.DE,pharmaceutical industry,Health Care
+GFTG.DE,fintech,Other
+WISEa.L,financial services,Financials
+URW.PA,Q112165561,Other
+ENQ.L,petroleum industry,Energy
+DIOR.PA,holding company activities,Financials
+DNB.OL,financial services,Financials
+HELr.AT,construction,Industrials
+RACE.MI,automotive industry,Consumer Discretionary
+WAWI.OL,freight transport,Industrials
+JUP.L,investment management,Financials
+OCDO.L,online shopping,Other
+AIRF.PA,holding company activities,Financials
+PINT.L,investment management,Financials
+FORT.L,list of building materials,Materials
+WKB.S,"financial service activities, except insurance and pension funding",Financials
+GTCP.WA,real estate development,Real Estate
+IVSO.ST,software industry,Information Technology
+LOCAL.PA,marketing,Other
+MULTI.OL,engineering,Industrials
+TBCG.L,line of credit,Financials
+ADML.L,insurance industry,Financials
+NEXI.PA,real estate development,Real Estate
+GJFG.OL,general insurance,Financials
+GBFG.DE,construction,Industrials
+SWEDa.ST,financial sector,Financials
+CCCP.WA,retail,Consumer Discretionary
+BORG.ST,retail,Consumer Discretionary
+DOVA.MI,financial sector,Financials
+INSTA.OL,other monetary intermediation,Communication
+AMB.WA,food industry,Consumer Staples
+PUIGb.MC,fashion,Consumer Discretionary
+TRE.MC,engineering,Industrials
+EMBRACb.ST,video game industry,Other
+GLPG.AS,pharmaceutical industry,Health Care
+DKSH.S,trade,Other
+SALM.OL,aquaculture,Other
+TGYM.MI,retail,Consumer Discretionary
+ROSNN.BX,energy industry,Other
+HBMG.H,installation of mechanical machines and equipment,Industrials
+AVOL.S,retail,Consumer Discretionary
+MTRO.L,financial services,Financials
+STM1.DE,automotive supplier,Consumer Discretionary
+DOFG.OL,ship-owner,Other
+ALFAAL.L,information technology,Information Technology
+SDZ.S,pharmaceutical industry,Health Care
+GENL.L,petroleum industry,Energy
+IDIA.S,wholesale (inter-company trade) of pharmaceutical products,Health Care
+ETS.VI,telecommunications,Communication
+B4B.H,wholesale,Other
+MANTA.HE,financial sector,Financials
+DNR.MI,electrochemistry,Other
+KETL.L,film industry,Other
+ROM.BX,health care industry,Health Care
+ASML.AS,semiconductor industry,Information Technology
+SGCG.DE,specialty chemicals,Materials
+ALCGM.PA,"data processing, hosting and related activities",Information Technology
+KOA.OL,automotive industry,Consumer Discretionary
+GALD.S,pharmaceutical industry,Health Care
+VAR.OL,petroleum industry,Energy
+SMCP.PA,fund management,Other
+DEMANT.CO,health care,Health Care
+ABI.BR,brewing industry,Other
+LEAL.ST,economics of banking,Financials
+EONGn.DE,energy sector,Other
+KP2.L,mining,Materials
+HUSQb.ST,mechanical engineering,Industrials
+AKBM.OL,fishing,Other
+ELIOR.PA,holding company activities,Financials
+WACGn.DE,manufacture of machinery and equipment,Industrials
+TENP.WA,video game industry,Other
+MTLN.L,conglomerate,Other
+ADSGn.DE,textile industry,Other
+ROGS.OL,financial services,Financials
+O4BG.DE,Q1416641,Other
+DWNG.DE,real estate industry,Real Estate
+MEDA.S,wholesale (inter-company trade) of pharmaceutical products,Health Care
+VBKG.DE,chemical industry,Materials
+EATP.WA,restaurant,Consumer Discretionary
+MONTE.BR,real estate industry,Real Estate
+NOD.OL,semiconductor industry,Information Technology
+TEL2b.ST,telecommunications,Communication
+DAST.PA,publishing of application software,Information Technology
+RING.OL,financial services,Financials
+GMMG.DE,automotive supplier,Consumer Discretionary
+UNIQ.VI,insurance industry,Financials
+LENV.VI,chemical industry,Materials
+SMPV.VI,industrial manufacturing,Industrials
+WBSV.VI,construction materials industry,Materials
+UMI.BR,mining,Materials
+GBLB.BR,holding company,Financials
+TESB.BR,chemical industry,Materials
+BEIG.DE,manufacture of perfumes and toilet preparations,Energy
+BIOG.H,pharmaceutical company,Health Care
+MBGn.DE,automotive industry,Consumer Discretionary
+DRWG.DE,engineering,Industrials
+FREG.DE,pharmaceutical industry,Health Care
+INPP.L,financial services,Financials
+RHMG.DE,weapons industry,Industrials
+TEGG.DE,real estate industry,Real Estate
+ZILGn.DE,automotive industry,Consumer Discretionary
+BKT.MC,economics of banking,Financials
+NTGY.MC,public utility,Utilities
+CAF.MC,construction of locomotives and other railway rolling stock,Industrials
+ENOR.MC,aerospace industry,Industrials
+INRN.S,industrial parts manufacturer,Industrials
+PSG.MC,Cash-in-transit,Other
+ACCP.PA,hospitality industry,Health Care
+SAF.PA,defense industry,Industrials
+BICP.PA,wholesale trade (business-to-business) of other household goods,Consumer Staples
+DANO.PA,food and tobacco industry,Consumer Staples
+NIBEb.ST,energy industry,Other
+KINVb.ST,investment,Financials
+CAPP.PA,IT service management,Other
+VIV.PA,activities of head offices,Other
+SOGN.PA,"financial service activities, except insurance and pension funding",Financials
+LEGD.PA,Q112165405,Other
+GNFT.PA,research and development in biotechnology,Health Care
+TEPRF.PA,advertising agency activities,Other
+SCHN.PA,electrical industry,Utilities
+AXFO.ST,retail,Consumer Discretionary
+TTEF.PA,petroleum industry,Energy
+ABF.L,food processing,Consumer Staples
+TTRGn.DE,industrial parts manufacturer,Industrials
+BP.L,petroleum industry,Energy
+CNE.L,petroleum industry,Energy
+EDIN.L,investment trust,Financials
+ELCO.L,information technology,Information Technology
+FCIT.L,investment management,Financials
+GRI.L,house-building,Other
+MTO.L,facility management,Other
+IMI.L,mechanical engineering,Industrials
+JSG.L,renting,Other
+MRCH.L,service,Other
+MUT.L,"financial service activities, except insurance and pension funding",Financials
+PAGE.L,employment services industry,Other
+VOD.L,telecommunications,Communication
+RSW.L,engineering,Industrials
+SGE.L,software industry,Information Technology
+SBRY.L,retail,Consumer Discretionary
+SNR.L,industrial manufacturing,Industrials
+AML.L,automotive industry,Consumer Discretionary
+TRY.L,financial services,Financials
+WEIR.L,mechanical engineering,Industrials
+BCVN.S,"financial service activities, except insurance and pension funding",Financials
+FORN.S,plastics and rubber industry,Materials
+ISN.S,real estate company,Real Estate
+LLBN.S,"financial service activities, except insurance and pension funding",Financials
+SLHN.S,financial services,Financials
+UHR.S,clock,Other
+VPBN.S,bank,Financials
+AEIGn.DE,information technology,Information Technology
+TRIA.PA,activities of head offices,Other
+UTDI.DE,telecommunications,Communication
+FXPO.L,mining of metal ores,Materials
+GEST.MC,automotive industry,Consumer Discretionary
+FLUI.MC,sporting goods industry,Other
+BRGB.OL,chemical industry,Materials
+PTNL.AS,logistics,Industrials
+ALCRB.PA,research and development in biotechnology,Health Care
+EMG.L,financial services,Financials
+BARN.S,"manufacture of cocoa, chocolate and confectionery products",Industrials
+CRADb.ST,publishing of application software,Information Technology
+AUBT.PA,IT systems and software consulting,Information Technology
+HNSA.ST,wholesale (inter-company trade) of pharmaceutical products,Health Care
+AURG.OL,financial services,Financials
+KIT.OL,electronics,Information Technology
+AKRBP.OL,petroleum industry,Energy
+EVTG.DE,biotechnology,Health Care
+OPL.WA,telecommunications,Communication
+8TRA.DE,automotive industry,Consumer Discretionary
+COKG.DE,information technology,Information Technology
+TRCS.L,IT service management,Other
+FORTUM.HE,energy supply,Other
+ALMB.CO,financial services,Financials
+DANSKE.CO,financial services,Financials
+RBREW.CO,beverage industry,Consumer Staples
+AUDK.LU,mass media,Communication
+SBMO.AS,petroleum industry,Energy
+INGA.AS,"financial service activities, except insurance and pension funding",Financials
+BITI.PA,business and other management consulting,Other
+MATAS.CO,retail,Consumer Discretionary
+ELK.OL,metal industry,Materials
+ODF.OL,freight transport,Industrials
+BZU.MI,building material,Other
+EUZG.DE,wholesale (inter-company trade) of pharmaceutical products,Health Care
+UNPI.MI,financial services,Financials
+SASY.PA,pharmaceutical industry,Health Care
+ACT1.DE,chemical industry,Materials
+SCAb.ST,forestry,Materials
+HMb.ST,retail,Consumer Discretionary
+ROONE.BX,real estate industry,Real Estate
+CWCG.DE,printing industry,Other
+NBS.L,financial services,Financials
+WITH.HE,software industry,Information Technology
+MZXG.DE,"manufacture of plates, sheets, tubes and profiles in plastic materials",Materials
+WAVE.PA,IT systems and software consulting,Information Technology
+MUXG.DE,associated company,Other
+EYDr.AT,"water collection, treatment and supply",Other
+GLJn.DE,financial services,Financials
+TRP.BX,manufacturing industry,Industrials
+CRLI.MI,consumer electronics industry,Information Technology
+GIVN.S,chemical industry,Materials
+SONO.PA,activities of head offices,Other
+BNP1.WA,economics of banking,Financials
+COFA.PA,holding company activities,Financials
+SAGS.L,higher education,Other
+OSBO.L,financial sector,Financials
+KOG.OL,petroleum industry,Energy
+KTN.DE,embedded system,Other
+HBR.L,petrochemical industry,Materials
+AKSOA.OL,industrial manufacturing,Industrials
+ISB.IC,bank,Financials
+SNI.OL,logistics,Industrials
+VTWRn.H,telecommunications,Communication
+SVIK.ST,research industry,Other
+SBBb.ST,holding company,Financials
+ANTO.L,mining,Materials
+LINK.OL,telecommunications,Communication
+CTY1S.HE,real property,Real Estate
+JET2.L,hospitality industry,Health Care
+ENEA.ST,software industry,Information Technology
+NSKOG.OL,pulp and paper industry,Materials
+PEUG.PA,holding company activities,Financials
+ENGIE.PA,energy industry,Other
+ALGIL.PA,activities of head offices,Other
+EMEIS.PA,Q112166151,Other
+OHBG.DE,aviation,Industrials
+IF.MI,financial services,Financials
+ALFA.ST,industrial manufacturing,Industrials
+INTRUM.ST,collection agency,Other
+IR5B_u.I,water transport,Industrials
+WG.L,petroleum industry,Energy
+NTEA_p.L,telecommunications,Communication
+OHLA.MC,construction,Industrials
+ACS.MC,construction,Industrials
+OLVAS.HE,beverage industry,Consumer Staples
+KNOS.L,software industry,Information Technology
+SOPR.PA,IT systems and software consulting,Information Technology
+YRM.MI,heavy industry,Other
+VOES.VI,iron and steel industry,Materials
+EDP.LS,electricity supply company,Utilities
+CPIE.VI,real estate industry,Real Estate
+ICGIN.L,business-to-business,Other
+ENEI.MI,energy industry,Other
+IVG.MI,automotive industry,Consumer Discretionary
+TOKMAN.HE,retail,Consumer Discretionary
+BEZG.L,insurance,Financials
+HOME.MC,real property,Real Estate
+CTT.LS,mail,Other
+LIGHT.AS,lighting,Other
+TTALO.HE,health care,Health Care
+PFD.L,food industry,Consumer Staples
+UN0k.DE,electricity generation,Utilities
+ENRGY.BR,renewable energy industry,Other
+CARDC.L,retail,Consumer Discretionary
+ADP.PA,fixed-base operator,Other
+INRr.AT,telecommunications,Communication
+NBGr.AT,financial services,Financials
+BRGE.L,investment company,Financials
+SHEL.L,petroleum industry,Energy
+CMBT.BR,water transport,Industrials
+MING.OL,financial services,Financials
+ASCI.MI,energy sector,Other
+ESNT.L,industrial parts manufacturer,Industrials
+PHMR.MC,biopharmaceutical,Health Care
+UPR.I,pharmacy,Health Care
+ICAG.L,aviation,Industrials
+DSFIR.AS,chemical industry,Materials
+NONG.OL,financial services,Financials
+QQ.L,weapons industry,Industrials
+ENAE.WA,energy industry,Other
+ASTH.WA,food industry,Consumer Staples
+VLAN.AS,investment,Financials
+METSO.HE,outline of industrial machinery,Industrials
+CZG.PR,weapons industry,Industrials
+SBOS.OL,real estate development,Real Estate
+ORX.ST,pharmaceutical industry,Health Care
+GLEN.L,mining industry,Materials
+SYENS.BR,chemical industry,Materials
+DUNI.ST,Other intermediaries in the trade of miscellaneous products,Communication
+III.L,aerospace industry,Industrials
+MPCC.OL,water transport,Industrials
+ONT.L,biotechnology industry,Health Care
+MOZN.S,retail,Consumer Discretionary
+RKH.L,natural resource,Other
+SBNOR.OL,savings bank,Financials
+EQUI.MI,education,Other
+ETLNDR.MM,real estate development,Real Estate
+CA1.DE,artificial intelligence,Other
+ENOG.L,petroleum industry,Energy
+CAMX.ST,pharmaceutical industry,Health Care
+MERY.PA,rental of land and other real estate,Real Estate
+OSE.PA,research and development in biotechnology,Health Care
+PON1V.HE,manufacture of machinery and equipment,Industrials
+TYRES.HE,automotive industry,Consumer Discretionary
+IMPN.S,civil engineering,Industrials
+NLFSK.CO,industrial manufacturing,Industrials
+GXIG.DE,industrial manufacturing,Industrials
+DBV.PA,biotechnology,Health Care
+CLN.S,chemical industry,Materials
+AIBG.I,financial sector,Financials
+ATYM.L,mining,Materials
+O5G.DE,real estate developer,Real Estate
+DMPG.DE,pharmaceutical company,Health Care
+CCH.L,food industry,Consumer Staples
+CLTN.S,Agents specialized in the trade of other specific products (French),Other
+PGE.WA,energy industry,Other
+NDAFI.HE,financial services,Financials
+PRIUA.PR,aircraft industry,Industrials
+CCC.L,information technology,Information Technology
+PHP.L,investment trust,Financials
+DOMP.WA,real estate industry,Real Estate
+HOCM.L,mining,Materials
+BORY.WA,automotive industry,Consumer Discretionary
+MEL.MC,hospitality industry,Health Care
+CECG.DE,retail,Consumer Discretionary
+OXB.L,pharmaceutical industry,Health Care
+NETC.L,software development,Information Technology
+PROX.BR,telecommunications,Communication
+CNA.L,energy supply,Other
+CAIV.VI,real estate industry,Real Estate
+ABGV.VI,construction,Industrials
+BAR.BR,technology,Information Technology
+RECT.BR,industrial manufacturing,Industrials
+BAYGn.DE,pharmaceutical industry,Health Care
+KWGG.DE,engineering,Industrials
+HEIG.DE,other mining and quarrying,Materials
+DEZG.DE,automotive industry,Consumer Discretionary
+SKBG.DE,manufacture of machinery for paper and paperboard production,Materials
+SZGG.DE,iron and steel industry,Materials
+SZUG.DE,food and tobacco industry,Consumer Staples
+CAST.ST,real estate company,Real Estate
+SAN.MC,financial services,Financials
+PHARP.L,petroleum industry,Energy
+AIE.L,investment management,Financials
+TUBA.MC,metal industry,Materials
+TEF.MC,telecommunications,Communication
+CARR.PA,retail,Consumer Discretionary
+AXAF.PA,financial services,Financials
+TCFP.PA,weapons industry,Industrials
+RXL.PA,holding company activities,Financials
+ICAD.PA,rental of land and other real estate,Real Estate
+BETSb.ST,online game,Other
+FRVIA.PA,automotive industry,Consumer Discretionary
+SGEF.PA,construction industry,Industrials
+PERP.PA,"distilling, rectifying and blending of spirits",Other
+RENA.PA,automotive industry,Consumer Discretionary
+MOWI.OL,fish farming,Other
+SEBF.PA,economics of banking,Financials
+EXHO.PA,Q112165913,Other
+SDY.L,equipment rental,Other
+BAES.L,aerospace engineering,Industrials
+AGT.L,activities of holding companies,Other
+CWK.L,food,Consumer Staples
+GSK.L,pharmaceutical industry,Health Care
+JMAT.L,chemical industry,Materials
+KSP.I,building material,Other
+LAND.L,real estate industry,Real Estate
+MGAMM.L,industrial manufacturing,Industrials
+RSL2.DE,Manufacture of electricity distribution and control apparatus,Utilities
+UU.L,"water collection, treatment and supply",Other
+PSON.L,publishing,Communication
+PSN.L,house-building,Other
+PIRC.MI,Other intermediaries in the trade of miscellaneous products,Communication
+ATTP.WA,chemical industry,Materials
+RTO.L,pest control,Other
+RIO.L,metal industry,Materials
+NOVN.S,pharmaceutical industry,Health Care
+SAIN.L,activities of holding companies,Other
+SRP.L,service,Other
+SN.L,medical technology industry,Health Care
+WEW.DE,electronic business,Other
+SPX.L,industrial manufacturing,Industrials
+TMPL.L,"financial service activities, except insurance and pension funding",Financials
+ULVR.L,personal care product,Other
+MARS.L,brewing industry,Other
+ZURN.S,insurance,Financials
+NESN.S,food industry,Consumer Staples
+ROG.S,pharmaceutical industry,Health Care
+NN.AS,insurance industry,Financials
+LOGN.S,computer hardware industry,Information Technology
+SCHP.S,mechanical engineering,Industrials
+SFZN.S,pharmaceutical company,Health Care
+SIKA.S,chemical industry,Materials
+BYS.S,mechanical engineering,Industrials
+BOUV.OL,information technology consulting,Information Technology
+AIXGn.DE,semiconductor industry,Information Technology
+SIGNC.S,basic industry and chemicals sector,Materials
+GHH.L,industrial parts manufacturer,Industrials
+GSFG.OL,seafood,Consumer Staples
+SAFE.L,self storage,Other
+1U1.DE,telecommunications,Communication
+SLRS.MC,renewable energy industry,Other
+ACR.OL,financial services,Financials
+BEAN.S,"heating, ventilation, and air conditioning",Other
+VSVS.L,materials science,Materials
+NAFG.DE,mining,Materials
+SESFd.PA,telecommunications,Communication
+DOCO.VI,hospitality industry,Health Care
+BITTI.HE,information technology,Information Technology
+CABK.MC,financial services,Financials
+LPKG.DE,mechanical engineering,Industrials
+SOFb.ST,rail industry,Other
+COLOb.CO,health care,Health Care
+GN.CO,electronics,Information Technology
+TIV.CO,amusement park,Other
+VOPA.AS,petroleum industry,Energy
+WLSNc.AS,publishing,Communication
+EVKn.DE,chemical industry,Materials
+AGOP.WA,mass media,Communication
+AKER.OL,financial services,Financials
+ATEA.OL,IT infrastructure,Other
+ORK.OL,conglomerate,Other
+ISP.MI,other monetary intermediations,Communication
+CRDI.MI,financial sector,Financials
+UTG.L,real estate industry,Real Estate
+PALF.VI,mechanical engineering,Industrials
+INDUa.ST,investment company,Financials
+LATOb.ST,investment,Financials
+SHBa.ST,financial sector,Financials
+HINV.BR,real estate company,Real Estate
+SAMPO.HE,financial services,Financials
+LINDEX.HE,retail,Consumer Discretionary
+FOXT.L,estate agent,Other
+CLASb.ST,retail,Consumer Discretionary
+VIE.PA,water supply,Utilities
+LONN.S,chemical industry,Materials
+BYLOTr.AT,lottery,Other
+BFSA.DE,recycling,Other
+CEMI.MI,cement industry,Materials
+KOF.PA,real estate industry,Real Estate
+BYG.L,self storage,Other
+SQN.S,economics of banking,Financials
+TXTP.WA,artificial intelligence,Other
+FRP.L,restructuring,Other
+NEL.OL,manufacture of other special-purpose machinery n.e.c.,Industrials
+HTRO.ST,manufacture of consumer electronics,Industrials
+GNS.L,biotechnology,Health Care
+TCAPI.L,bank,Financials
+MRL.MC,real estate development,Real Estate
+DHLn.DE,logistics,Industrials
+EDRE.MC,tourism,Consumer Discretionary
+ONTEX.BR,wholesale trade (inter-company trade) of perfumery and beauty products,Other
+EVDG.DE,airline ticket,Industrials
+CPRI.MI,beverage industry,Consumer Staples
+SOIT.PA,Manufacture of electronic components,Industrials
+ZAP.OL,electrical engineering,Utilities
+AGFEb.CO,sports industry,Other
+EMMN.S,food industry,Consumer Staples
+AFK.OL,electricity generation,Utilities
+INF.L,publishing,Communication
+TUNE.L,electronics,Information Technology
+BCP.LS,economics of banking,Financials
+QLT.L,financial services,Financials
+BAWG.VI,economics of banking,Financials
+ASOS.L,clothing industry,Other
+CFEB.BR,rail transport,Industrials
+SRG.MI,gas industry,Energy
+ENI.MI,petroleum industry,Energy
+ERST.VI,financial services,Financials
+ARGX.BR,biotechnology,Health Care
+VQTG.H,insulation technology,Information Technology
+NAPA.OL,computer hardware industry,Information Technology
+JUNG_p.DE,mechanical engineering,Industrials
+MILDEF.ST,military industry,Other
+TLGO.MC,Railway car manufacturing,Industrials
+WRT1V.HE,industrial manufacturing,Industrials
+RCH.L,publishing,Communication
+RKET.H,financial services,Financials
+MCM.MC,pulp and paper industry,Materials
+FIMI.MI,energy sector,Other
+SECUb.ST,private security company,Other
+PCOP.WA,retail,Consumer Discretionary
+EQNR.OL,petroleum industry,Energy
+ABNd.AS,financial services,Financials
+1COVG.F,chemical industry,Materials
+PTSB.I,financial services,Financials
+HRA.MI,service sector,Other
+CALI.MI,cement industry,Materials
+GYM.L,fitness industry,Other
+SHOTE.ST,hotel chain,Consumer Discretionary
+NWGP.WA,manufacture of machinery and equipment,Industrials
+AMBUb.CO,health care,Health Care
+XIOR.BR,student housing,Other
+MMGRb.ST,financial services,Financials
+HLE.DE,automotive supplier,Consumer Discretionary
+SKISb.ST,tourism,Consumer Discretionary
+THG.L,retail,Consumer Discretionary
+VEND.OL,classified advertising,Other
+AVANZ.ST,financial services,Financials
+MCG.L,public transport,Industrials
+VACN.S,energy supply,Other
+TRMDa.CO,shipping line,Other
+DTGGe.DE,automotive industry,Consumer Discretionary
+AUTO.OL,robotics,Other
+GETIb.ST,health care,Health Care
+GRLS.MC,pharmaceutical industry,Health Care
+SUBC.OL,energy industry,Other
+BMPS.MI,financial sector,Financials
+HIAB.HE,metal industry,Materials
+GEO.MI,textile industry,Other
+SPKSJF.CO,financial services,Financials
+AKE.PA,chemical industry,Materials
+R3NK.DE,automotive industry,Consumer Discretionary
+PZU.WA,financial services,Financials
+IG.MI,Manufacture of gas; distribution of gaseous fuels through mains,Energy
+ARDS.AS,business and other management consultancy activities,Other
+1SXP.DE,pharmaceutical packaging,Health Care
+ZELA.CO,pharmaceutical industry,Health Care
+ENT.L,online gambling,Other
+EIOF.OL,freight transport,Industrials
+APAM.AS,iron and steel industry,Materials
+MBK.WA,banking,Financials
+AUTON.S,automotive industry,Consumer Discretionary
+SFER.MI,clothing industry,Other
+IPAR.PA,manufacture of perfumes and toiletries,Energy
+AGNr.AT,air transport,Industrials
+ZUMV.VI,industrial manufacturing,Industrials
+SRENH.S,insurance,Financials
+PIA.MI,automotive industry,Consumer Discretionary
+TOM2.AS,consumer electronics industry,Information Technology
+BOCH.CY,financial services,Financials
+MMKV.VI,pulp and paper industry,Materials
+KLR.L,engineering,Industrials
+PROT.OL,financial services,Financials
+DESN.S,chemical industry,Materials
+MCOVb.ST,health care,Health Care
+OTPB.BU,economics of banking,Financials
+KNEBV.HE,engineering,Industrials
+HUSCO.CO,construction industry,Industrials
+LSEG.L,stock market,Other
+STDM.PA,pharmaceutical industry,Health Care
+COFB.BR,real estate industry,Real Estate
+KBHL.CO,Airport Operations,Other
+EFGN.S,financial services,Financials
+AL2SI.PA,business and other management consulting,Other
+WWH.L,investment management,Financials
+TRYG.CO,insurance industry,Financials
+BRBI.MI,automotive industry,Consumer Discretionary
+HEIO.AS,beverage industry,Consumer Staples
+KALMAR.HE,mechanical engineering,Industrials
+DOM.L,system catering,Other
+SBRE.L,insurance,Financials
+AYV.PA,activities of head offices,Other
+SATSS.OL,aircraft ground handling,Industrials
+CLIG.L,investment trust,Financials
+XVIVO.ST,wholesale (inter-company trade) of pharmaceutical products,Health Care
+VLTSA.PA,"engineering, technical studies",Industrials
+EVRE.L,iron and steel industry,Materials
+LNA.PA,accommodation facility for dependent elderly people,Other
+PCZ.DE,finance,Financials
+DIAS.MI,biotechnology,Health Care
+KAMBI.ST,Gaming,Consumer Discretionary
+JTC.L,hospitals and rehabilitation,Health Care
+SCMAS.MC,estate,Other
+MRCG.DE,chemical industry,Materials
+VSURE.ST,home security,Other
+NG.L,electric power industry,Utilities
+EVPL.L,video game industry,Other
+DTEGn.DE,telecommunications,Communication
+VNAn.DE,real estate industry,Real Estate
+UPM.HE,forestry,Materials
+NORTHM.CO,mass media,Communication
+QIA.DE,biotechnology,Health Care
+FMEG.DE,health care,Health Care
+WCHG.DE,chemical industry,Materials
+SPOLS.OL,financial services,Financials
+TELIA.ST,telecommunications,Communication
+MANV.VI,confectionery industry,Other
+OBER.VI,economics of banking,Financials
+BEKB.BR,industrial manufacturing,Industrials
+COLR.BR,mass-market retailing,Consumer Discretionary
+PHG.AS,electronics industry,Information Technology
+SOF.BR,financial services,Financials
+BASFn.DE,chemical industry,Materials
+PBBG.DE,"financial service activities, except insurance and pension funding",Financials
+BOSSn.DE,textile industry,Other
+HLAG.DE,water transport,Industrials
+PHHGn.F,industrial sector,Industrials
+PUMG.DE,textile industry,Other
+SIEGn.DE,electrical engineering,Utilities
+LUVE.MI,industrial manufacturing,Industrials
+ACX.MC,iron and steel industry,Materials
+EBRO.MC,food industry,Consumer Staples
+ASAI.L,software industry,Information Technology
+BNPP.PA,other monetary intermediations,Communication
+BOUY.PA,conglomerate,Other
+SCOR.PA,Q112166004,Other
+VCTP.PA,"manufacture of cement, lime and plaster",Materials
+ODET.PA,holding company activities,Financials
+ESLX.PA,glasses manufacturing,Materials
+EXEP.PA,activities of head offices,Other
+BABr.AT,retail,Consumer Discretionary
+CVO.PA,rental of land and other real estate,Real Estate
+GFII.PA,activities of head offices,Other
+IMTP.PA,battery industry,Other
+LVMH.PA,retail,Consumer Discretionary
+OPM.PA,automotive supplier,Consumer Discretionary
+PRTP.PA,activities of head offices,Other
+PUBP.PA,advertising industry,Other
+ROBF.PA,Q112165279,Other
+ATOS.PA,IT service management,Other
+VIRB.PA,Q112165285,Other
+BAB.L,electrical industry,Utilities
+BAG.L,beverage industry,Consumer Staples
+BATS.L,tobacco industry,Consumer Staples
+ALCLS.PA,research and development in biotechnology,Health Care
+BOY.L,metal treatment and coating,Materials
+BNZL.L,product distribution,Other
+CKN.L,freight transport,Industrials
+DHER.DE,food delivery service,Consumer Staples
+COSG.L,civil engineering,Industrials
+HLMA.L,technology,Information Technology
+ELM.L,manufacture of chemicals and chemical products,Materials
+FCH.L,fintech,Other
+HAYS.L,employment services industry,Other
+HILS.L,infrastructure,Other
+HSBA.L,financial services,Financials
+WLTP.WA,automotive industry,Consumer Discretionary
+KYGa.I,food industry,Consumer Staples
+MYI.L,"financial service activities, except insurance and pension funding",Financials
+RCP.L,investment company,Financials
+SDR.L,financial services,Financials
+SMT.L,investment management,Financials
+ARBB.L,financial sector,Financials
+SVT.L,"water collection, treatment and supply",Other
+BGS.L,investment management,Financials
+SMIN.L,vehicle construction,Industrials
+STAN.L,financial services,Financials
+WLN.PA,"data processing, hosting and related activities",Information Technology
+MRCM.L,activities of holding companies,Other
+PKO.WA,banking,Financials
+TPK.L,retail,Consumer Discretionary
+FRAS.L,retail,Consumer Discretionary
+EUFI.PA,"technical analyses, tests and inspections",Other
+WTB.L,hospitality industry,Health Care
+HELG.OL,financial services,Financials
+ASCN.S,telecommunications,Communication
+KTCG.VI,manufacturing of scientific and technical instrumentation,Industrials
+DAE.S,industrial parts manufacturer,Industrials
+EMSN.S,Angewandte Chemie,Other
+GF.S,industrial manufacturing,Industrials
+MLXS.BR,microelectronics,Information Technology
+HOLN.S,mining,Materials
+KARN.S,industrial sector,Industrials
+PMN.S,power electronics,Utilities
+VONN.S,asset management,Financials
+GYC.DE,real estate industry,Real Estate
+ELISA.HE,telecommunications,Communication
+PRY.MI,industrial manufacturing,Industrials
+TPE.WA,energy sector,Other
+KTAG.DE,automobile vehicle manufacturing,Industrials
+CRST.L,house-building,Other
+ALM.MC,pharmaceutical industry,Health Care
+MNDI.L,papermaking,Materials
+FAGRO.BR,pharmaceutical industry,Health Care
+MNG.L,financial services,Financials
+ETGG.DE,bioenergy,Other
+OPUSG.BU,asset management,Financials
+O2Dn.H,telecommunications,Communication
+WWL.WA,food industry,Consumer Staples
+2GBG.DE,heating technology,Information Technology
+BOND.PA,food industry,Consumer Staples
+MTCM.MI,engineering,Industrials
+CITT.PA,investment funds and similar financial entities,Financials
+OCI.AS,chemical industry,Materials
+SKUE.OL,financial services,Financials
+RKT.L,personal care product,Other
+BAVA.CO,biotechnology,Health Care
+OVH.PA,web hosting service,Other
+OSRn.H,semiconductor,Information Technology
+NKT.CO,industrial manufacturing,Industrials
+DNORD.CO,freight transport,Industrials
+ALSYDB.CO,financial services,Financials
+AD.AS,retail,Consumer Discretionary
+AKZO.AS,chemical industry,Materials
+FNAC.PA,activities of head offices,Other
+HMSN.ST,technology company,Information Technology
+HEIN.AS,beverage industry,Consumer Staples
+MVVGn.DE,energy supply,Other
+BSLG.DE,sporting activities,Other
+BONHR.OL,holding company,Financials
+NHY.OL,petroleum industry,Energy
+STB.OL,insurance industry,Financials
+TOM.OL,reverse vending machine,Industrials
+THRLT.L,real estate industry,Real Estate
+MOED.MI,publishing,Communication
+GASI.MI,insurance industry,Financials
+TLIT.MI,telecommunications,Communication
+BMAG.S,automotive industry,Consumer Discretionary
+SEBa.ST,economics of banking,Financials
+SKAb.ST,construction,Industrials
+SKFb.ST,industrial manufacturing,Industrials
+KESKOB.HE,retail,Consumer Discretionary
+OUT1V.HE,copper extraction,Other
+NOKIA.HE,telecommunications device,Communication
+FUTR.L,publishing,Communication
+TIETO.HE,technology company,Information Technology
+SISG.DE,Wholesale (intercompany trade) of electronic and telecommunications equipment and parts,Communication
+TTKG.DE,mail order,Other
+VIOH.AT,iron and steel industry,Materials
+JUSTJ.L,financial services,Financials
+DADP.WA,e-commerce,Consumer Discretionary
+BANB.S,chemical industry,Materials
+LTMC.MI,gambling,Other
+ZO1G.H,retail,Consumer Discretionary
+PAFR.L,mining,Materials
+PST.MI,logistics,Industrials
+TXGN.S,mass media,Communication
+MOBN.S,real estate company,Real Estate
+MEDG.DE,hospital,Health Care
+ENX.PA,financial services,Financials
+GAW.L,publishing,Communication
+STLAM.MI,automotive industry,Consumer Discretionary
+SPI.L,health care,Health Care
+UBSGE.S,financial services,Financials
+SFQ.DE,automotive supplier,Consumer Discretionary
+DAL.MI,electronics,Information Technology
+SABE.MC,financial services,Financials
+NA9n.DE,information technology,Information Technology
+NEXS.PA,activities of head offices,Other
+HAGG.DE,weapons industry,Industrials
+TEMN.S,fintech,Other
+DLG.MI,electronics industry,Information Technology
+ORRON.ST,petroleum industry,Energy
+EMII.MI,financial services,Financials
+BAKKA.OL,food industry,Consumer Staples
+ALRR.WA,banking,Financials
+DSV.CO,transport,Industrials
+ELANb.ST,printing company,Other
+FNMI.MI,transport company,Industrials
+DFSD.L,retail,Consumer Discretionary
+FIA1S.HE,commercial aviation,Industrials
+FLUGb.CO,paint industry,Other
+FEML.L,Closed-end fund,Other
+INPST.AS,logistics,Industrials
+TE.PA,"engineering, technical studies",Industrials
+TNOM.HE,consulting,Other
+INVP.L,financial services,Financials
+NOLAb.ST,plastics industry,Materials
+SSE.L,energy sector,Other
+PSMGn.DE,mass media,Communication
+TENR.MI,mining industry,Materials
+RAND.AS,human resource management,Other
+SSABa.ST,iron and steel industry,Materials
+TFBANK.ST,financial services,Financials
+ABS.PA,higher education,Other
+EXMR.BR,merchant marine,Other
+FABG.ST,real estate industry,Real Estate
+CURY.L,retail,Consumer Discretionary
+FROP.WA,chemical industry,Materials
+BPSI.MI,financial sector,Financials
+GDRB.BU,pharmaceutical industry,Health Care
+AMA.MC,software industry,Information Technology
+WWI.OL,shipping line,Other
+NAS.OL,Q112165870,Other
+EDEN.PA,Q112166013,Other
+LEON.S,financial services,Financials
+JDW.L,hospitality industry,Health Care
+CER.L,software industry,Information Technology
+OTEC.OL,Other software publishing,Information Technology
+WAFGn.DE,electronics,Information Technology
+KEMPOWR.HE,industrial sector,Industrials
+HFD.L,retail,Consumer Discretionary
+GBGP.L,identity verification,Other
+AZMT.MI,investment,Financials
+SIFG.AS,religious congregations and associations,Other
+AO.L,mail order,Other
+ENR1n.DE,energy technology,Information Technology
+HRMr.AT,construction,Industrials
+YPSN.S,wholesale (inter-company trade) of pharmaceutical products,Health Care
+NEUP.WA,wholesale,Other
+RDC.DE,pharmacy,Health Care
+MGN.OL,renewable energy,Other
+LHYFE.PA,Q112166090,Other
+FGP.L,public transport,Industrials
+SSPG.L,food service,Consumer Staples
+SY1G.DE,chemical industry,Materials
+HIK.L,pharmaceutical industry,Health Care
+MILP.WA,financial services,Financials
+NEXII.MI,financial services,Financials
+BCGE.S,bank,Financials
+MTXGn.DE,aviation,Industrials
+JSW.WA,mining,Materials
+EUR.WA,trade,Other
+SRAIL.S,rail transport,Industrials
+DOCM.S,pharmacy,Health Care
+ELTEL.ST,Construction of utility projects for electricity and telecommunications,Utilities
+AAGG.DE,mechanical engineering,Industrials
+SB1NO.OL,savings bank,Financials
+ALSS.LS,pulp and paper industry,Materials
+RBIV.VI,financial services,Financials
+NESTE.HE,petroleum industry,Energy
+GALE.S,pharmaceutical industry,Health Care
+YOU.L,opinion poll,Other
+FIEG.DE,optician,Other
+GENG.L,software industry,Information Technology
+ASSAb.ST,industrial manufacturing,Industrials
+CDAF.PA,ski resort,Other
+STMPA.PA,semiconductor industry,Information Technology
+HUMAN.ST,insurance industry,Financials
+SES.MI,other voluntary membership organizations (France),Other
+AEGN.AS,insurance industry,Financials
+CLARI.PA,accommodation facility for dependent elderly people,Other
+VICOR.ST,pharmaceutical industry,Health Care
+AT1.DE,real estate industry,Real Estate
+STEMS.L,employment services industry,Other
+BDXP.WA,construction industry,Industrials
+DRX.L,electric power industry,Utilities
+MONC.MI,clothing industry,Other
+SNL.MI,building of pleasure and sporting boats,Other
+SMHNn.DE,Wholesale (intercompany trade) of electronic and telecommunications equipment and parts,Communication
+CAN.L,satellite telecommunications,Communication
+SUNN.S,telecommunications,Communication
+SAGA.L,insurance,Financials
+ORIOLA.HE,health care industry,Health Care
+ISS.CO,facility management,Other
+CMCX.L,financial services,Financials
+SHLG.DE,health care,Health Care
+IPH.PA,research and development in biotechnology,Health Care
+LASTIK.HE,property management,Real Estate
+DOKA.S,industrial parts manufacturer,Industrials
+ECH.WA,real estate development,Real Estate
+ASHM.L,financial services,Financials
+HDDG.DE,mechanical engineering,Industrials
+IMB.L,tobacco industry,Consumer Staples
+BDTG.DE,development service provider,Other
+TEL.OL,telecommunications,Communication
+KIE.L,civil engineering,Industrials
+SNK.WA,chemical industry,Materials
+KAER.VI,"financial service activities, except insurance and pension funding",Financials
+VERB.VI,energy supply,Other
+LOTB.BR,bakery,Other
+ECONB.BR,IT service management,Other
+IETB.BR,vehicle industry,Other
+SOLB.BR,chemical industry,Materials
+BMWG.DE,automotive industry,Consumer Discretionary
+GEBN.S,plumbing,Other
+CBKG.DE,"financial service activities, except insurance and pension funding",Financials
+CONG.DE,automotive industry,Consumer Discretionary
+LHAG.DE,air transport,Industrials
+GILG.DE,manufacture of machinery and equipment,Industrials
+HNDG.F,food industry,Consumer Staples
+HOTG.DE,construction industry,Industrials
+SDFGn.DE,chemical industry,Materials
+RHKG.DE,health care,Health Care
+VIBG_p.DE,porcelain and ceramic industry,Other
+VOWG.DE,automotive industry,Consumer Discretionary
+BBVA.MC,financial services,Financials
+FCC.MC,tertiary sector of the economy,Other
+REP.MC,petroleum industry,Energy
+SAVEN.PA,agribusiness,Other
+CBLP.PA,activities of head offices,Other
+COREa.ST,property management,Real Estate
+VIRI.PA,petroleum industry,Energy
+ALGEV.PA,holding company activities,Financials
+GFCP.PA,real estate industry,Real Estate
+LOIM.PA,real estate industry,Real Estate
+BOLL.PA,"manufacture of plates, sheets, tubes and profiles in plastic materials",Materials
+OTEr.AT,telecommunications,Communication
+SGOB.PA,construction materials industry,Materials
+VLLP.PA,activities of head offices,Other
+VLOF.PA,automotive industry,Consumer Discretionary
+BARC.L,financial sector,Financials
+BALF.L,construction,Industrials
+BOOT.L,construction,Industrials
+BT.L,telecommunications,Communication
+CHG.L,weapons industry,Industrials
+AV.L,financial services,Financials
+JGGI.L,financial services,Financials
+ITV.L,media industry,Communication
+EXPN.L,professional service,Other
+GRG.L,food industry,Consumer Staples
+KMR.L,mining,Materials
+LGEN.L,financial services,Financials
+MKS.L,retail,Consumer Discretionary
+MSLH.L,retail,Consumer Discretionary
+MIDW.L,investment management,Financials
+UNI.MC,economics of banking,Financials
+BCU.MI,fashion,Consumer Discretionary
+NICL.L,beverage industry,Consumer Staples
+VANQ.L,financial services,Financials
+RAT.L,finance,Financials
+RR.L,weapons industry,Industrials
+ROR.L,engineering,Industrials
+SHI.L,basic industry and chemicals sector,Materials
+MGNS.L,civil engineering,Industrials
+SMWH.L,retail,Consumer Discretionary
+VZN.S,telecommunications,Communication
+TATE.L,food processing,Consumer Staples
+LLOY.L,financial services,Financials
+FNTGn.DE,telecommunications,Communication
+BLKB.S,"financial service activities, except insurance and pension funding",Financials
+3IN.L,investment,Financials
+ERG.MI,energy industry,Other
+SUN.S,mechanical engineering,Industrials
+VETN.S,manufacture of hollow glass,Materials
+TGS.OL,video game industry,Other
+CCHE.PA,activities of head offices,Other
+IPF.L,finance,Financials
+OPN.WA,e-commerce,Consumer Discretionary
+NMAN.ST,industrial parts manufacturer,Industrials
+TRNG.PA,research and development in biotechnology,Health Care
+APR.OL,telecommunications equipment industry,Communication
+PTEC.L,software industry,Information Technology
+SQRL.MC,communication,Communication
+STMN.S,pharmaceutical industry,Health Care
+ALCC.S,pharmaceutical industry,Health Care
+HEPr.AT,oil refining,Energy
+EWI.L,investment management,Financials
+A2.MI,energy supply,Other
+SCMN.S,telecommunications,Communication
+ALPN.S,investment company,Financials
+OBEL.BR,telecommunications,Communication
+OMASP.HE,economics of banking,Financials
+KBC.BR,financial sector,Financials
+UBXN.S,computer hardware industry,Information Technology
+DFDS.CO,shipping line,Other
+CARLb.CO,beverage industry,Consumer Staples
+JYSK.CO,financial services,Financials
+PSHP.L,financial services,Financials
+MEKKO.HE,textile industry,Other
+DNO.OL,electric power distribution,Utilities
+VEI.OL,construction industry,Industrials
+WBD.MI,construction industry,Industrials
+INVEb.ST,investment company,Financials
+SAABb.ST,aviation,Industrials
+VOLVb.ST,automotive industry,Consumer Discretionary
+STERV.HE,pulp and paper industry,Materials
+SIXG.DE,car rental company,Other
+ACE.MI,"water collection, treatment and supply",Other
+AJBA.L,financial services,Financials
+SHAW.L,financial services,Financials
+BRCK.L,telecommunications,Communication
+ELGG.DE,integrated device manufacturer,Industrials
+BALDb.ST,property management,Real Estate
+PRSO.OL,petroleum industry,Energy
+CARM.PA,rental of land and other real estate,Real Estate
+BDRP.PA,Q112166010,Other
+PKN.WA,petroleum industry,Energy
+VALMT.HE,shipbuilding,Industrials
+GFRD.L,construction,Industrials
+AFXG.DE,health technology,Health Care
+BC8G.DE,information technology,Information Technology
+ECEL.L,"wholesale (business-to-business) of computers, computer peripheral equipment and software",Information Technology
+PRX.AS,investment,Financials
+VERK.HE,retail,Consumer Discretionary
+STBS.L,financial services,Financials
+PRS.MC,mass media,Communication
+UIE.CO,water management,Other
+TEP.L,telecommunications,Communication
+ANDR.VI,mechanical engineering,Industrials
+TELA.VI,telecommunications,Communication
+NSISb.CO,biotechnology,Health Care
+CLAVI.ST,computer security,Information Technology
+PNDORA.CO,jewelry,Other
+POL.OL,mass media,Communication
+SAPG.DE,software industry,Information Technology
+FCT.MI,shipbuilding,Industrials
+CLOEb.ST,confection,Other
+ARION.IC,financial sector,Financials
+CLNX.MC,telecommunications infrastructure,Communication
+ANTIN.PA,private equity,Other
+ZALG.DE,retail,Consumer Discretionary
+NDXG.DE,wind power industry,Utilities
+ITX.MC,retail,Consumer Discretionary
+ERMT.PA,Mining of other non-ferrous metal ores,Materials
+GAMA.L,telecommunication company,Communication
+AMPF.MI,industrial manufacturing,Industrials
+VITR.ST,wholesale (inter-company trade) of pharmaceutical products,Health Care
+BRIMH.IC,fishing industry,Other
+AFRY.ST,development service provider,Other
+AMUN.PA,financial services,Financials
+SCATC.OL,electric power production,Utilities
+CTY.L,investment trust,Financials
+CAGR.PA,other monetary intermediations,Communication
+AGES.BR,financial services,Financials
+ABGA.OL,financial services,Financials
+CDR.WA,video game industry,Other
+MBBG.DE,vehicle industry,Other
+MOLN.S,biotechnology,Health Care
+INWT.MI,telecommunications,Communication
+KBX.DE,railway,Industrials
+ZAL.OL,human resource management,Other
+CONSTI.HE,construction industry,Industrials
+NOBI.ST,kitchen,Other
+KEMIRA.HE,chemical industry,Materials
+BRBY.L,clothing industry,Other
+APETIT.HE,food industry,Consumer Staples
+SHA0n.DE,automotive industry,Consumer Discretionary
+EPR.OL,retail,Consumer Discretionary
+PBEE.L,pension provider,Other
+OEMb.ST,transport,Industrials
+AVI.MI,weapons industry,Industrials
+YIT.HE,construction,Industrials
+SANOMA.HE,media industry,Communication
+ACBr.AT,financial sector,Financials
+UMG.AS,music industry,Other
+MAB.L,brewing industry,Other
+IHG.L,hotel industry,Consumer Discretionary
+ALMAC.HE,publishing,Communication
+VID.MC,industrial sector,Industrials
+WALLb.ST,property management,Real Estate
+MRON.L,financial services,Financials
+YAR.OL,chemical industry,Materials
+ARIS.MI,home appliance industry,Other
+ELI.BR,electric power industry,Utilities
+QTCOM.HE,software industry,Information Technology
+BGN.MI,financial services,Financials
+AFAGR.HE,mining industry,Materials
+MOTR.L,car dealership,Other
+SCTS.L,information technology,Information Technology
+AZN.L,pharmaceutical industry,Health Care
+GOMX.ST,aerospace industry,Industrials
+SAA.L,marketing,Other
+NCCG.L,research,Other
+HLN.L,pharmaceutical industry,Health Care
+AMS.S,semiconductor industry,Information Technology
+ENAV.MI,commodities market,Other
+SYNACT.ST,biotechnology,Health Care
+DIAL.L,electronics,Information Technology
+KPN.AS,telecommunications,Communication
+RMV.L,Internet,Information Technology
+ANORA.HE,beverage industry,Consumer Staples
+FSECURE.HE,software industry,Information Technology
+DEHr.AT,energy industry,Other
+LUXP.LU,finance,Financials
+B5A0n.H,construction,Industrials
+EXOR.AS,financial sector,Financials
+BVI.PA,activities of head offices,Other
+IWG.L,facility management,Other
+INGP.WA,financial services,Financials
+BAMI.MI,economics of banking,Financials
+HEIMpref.ST,real property,Real Estate
+LXSG.DE,chemical industry,Materials
+BLPU.L,publishing,Communication
+VERVE.ST,phonographic industry,Other
+FLOW.AS,financial services,Financials
+GOFORE.HE,information technology industry,Information Technology
+DB1Gn.DE,financial services,Financials
+BLOP.WA,video game industry,Other
+BIRG.I,economics of banking,Financials
+LANDI.S,electronics,Information Technology
+AEMr.AT,mass media,Communication
+UD.MI,telecommunications,Communication
+GRANG.ST,metallurgy,Materials
+EVOK.L,gambling industry,Other
+ETL.PA,satellite telecommunications,Communication
+PHNU.MI,pharmaceutical industry,Health Care
+IPN.PA,activities of head offices,Other
+STOGR.CO,tobacco industry,Consumer Staples
+HFGG.DE,food retail sector,Consumer Staples
+BOOZT.ST,retail,Consumer Discretionary
+BHGF.ST,retail,Consumer Discretionary
+VIK1V.HE,tourism,Consumer Discretionary
+BCHN.S,mechanical engineering,Industrials
+BNRGn.DE,Wholesale of chemical products,Materials
+BKWB.S,energy supply,Other
+VRLA.PA,manufacture of hollow glass,Materials
+ADYEN.AS,mobile payment industry,Other
+MHPCq.L,agriculture,Consumer Staples
+ALLFG.AS,other monetary intermediations,Communication
+ORNBV.HE,pharmaceutical industry,Health Care
+AUSS.OL,fish farming,Other
+ROCKb.CO,construction materials industry,Materials
+CE2G.H,energy sector,Other
+DNLM.L,retail,Consumer Discretionary
+SOME.MI,bicycle industry,Other
+BGEO.L,banking,Financials
+AKVA.OL,aquaculture,Other
+BBN.S,investment management,Financials
+UBIP.PA,video game publishing,Communication
+PV.DE,industrial manufacturing,Industrials
+RWA.L,employment services industry,Other
+PEO.WA,financial services,Financials
+JD.L,retail,Consumer Discretionary
+PCT.L,investment,Financials
+ITPG.MI,manufacture of machinery and equipment,Industrials

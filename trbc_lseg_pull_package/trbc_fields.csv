@@ -1,0 +1,11 @@
+field,meaning,expected_output_column
+TR.TRBCEconomicSector,TRBC Economic Sector Name,TRBC_Economic_Sector
+TR.TRBCEconSectorCode,TRBC Economic Sector Code,TRBC_Economic_Sector_Code
+TR.TRBCBusinessSector,TRBC Business Sector Name,TRBC_Business_Sector
+TR.TRBCBusinessSectorCode,TRBC Business Sector Code,TRBC_Business_Sector_Code
+TR.TRBCIndustryGroup,TRBC Industry Group Name,TRBC_Industry_Group
+TR.TRBCIndustryGroupCode,TRBC Industry Group Code,TRBC_Industry_Group_Code
+TR.TRBCIndustry,TRBC Industry Name,TRBC_Industry
+TR.TRBCIndustryCode,TRBC Industry Code,TRBC_Industry_Code
+TR.TRBCActivity,TRBC Activity Name,TRBC_Activity
+TR.TRBCActivityCode,TRBC Activity Code,TRBC_Activity_Code

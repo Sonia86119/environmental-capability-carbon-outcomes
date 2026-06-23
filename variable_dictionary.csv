@@ -1,0 +1,19 @@
+variable,label,operationalisation,source_field,analytical_role,notes
+Identifier,Firm identifier (RIC),LSEG Refinitiv Instrument Code,Identifier,key,Used to merge all inputs; not analysed
+capability,Environmental capability score,Equal-weight mean of Resource Use and Environmental Innovation theme scores,"Resource Use Score (FY0); Environmental Innovation Score (FY0)",primary predictor,Excludes the Environmental Pillar score to avoid mechanical double counting
+RU,Resource-use score,Provider theme score from public corporate data,Resource Use Score (FY0),component predictor,Component of capability
+EI,Environmental-innovation score,Provider theme score from public corporate data,Environmental Innovation Score (FY0),component predictor,Component of capability
+ln_co2_total,Log Scope 1+2 emissions,Natural log of direct Scope 1 plus indirect Scope 2 CO2e,CO2 Equivalent Emissions Total (FY0),operational absolute outcome,28 zero-emission firms dropped (log undefined)
+ln_co2_per_assets,Log Scope 1+2 / assets,Natural log of (Scope 1+2 CO2e / total assets),"CO2 Equivalent Emissions Total (FY0); Total Assets - Actual (FY0, USD)",operational intensity (sensitivity),Assets is an imperfect denominator (see limitations)
+ln_co2_s3,Log Scope 3 emissions,Natural log of reported value-chain CO2e,"CO2 Equivalent Emissions Indirect, Scope 3 (FY0)",value-chain absolute outcome,Scope 3 coverage is incomplete and method-dependent
+ln_co2_s3_assets,Log Scope 3 / assets,Natural log of (Scope 3 CO2e / total assets),"CO2 Equivalent Emissions Indirect, Scope 3 (FY0); Total Assets - Actual (FY0, USD)",value-chain intensity (sensitivity),
+ln_mcap,Log market capitalisation,Natural log of company market cap (USD),Company Market Cap (USD),control (firm size),
+waste_recycled,Waste recycled total,Total recycled waste (FY0),Waste Recycled Total (FY0),second physical outcome (Table 5),Absolute tonnage; no matched total-waste denominator
+has_wr,Discloses waste recycled,Indicator = 1 if waste_recycled reported and > 0,Waste Recycled Total (FY0),selection outcome (Table 5 W1),
+ln_wr,Log total waste recycled,Natural log of waste_recycled,Waste Recycled Total (FY0),absolute outcome (Table 5 W2/W4),
+ln_wr_assets,Log waste recycled / assets,Natural log of (waste_recycled / total assets),"Waste Recycled Total (FY0); Total Assets - Actual (FY0, USD)",intensity outcome (Table 5 W3/W5),
+cgroup,Country group,HQ country; countries with < 25 firms collapsed to Other,Country of Headquarters,fixed effect,Captures national regulation/energy/disclosure institutions
+TRBC_Economic_Sector,TRBC economic sector,LSEG TRBC Economic Sector name (re-pulled),identifiers_trbc.csv,fixed effect (industry-FE robustness),Optional; enables sector-FE models when present
+sw,Stabilised IPW weight,Stabilised inverse-probability weight from the disclosure model,derived,weight (IPW models),Truncated at 1st/99th percentiles
+sector,Industry sector,Wikidata industry mapped to 11 broad sectors plus Other,industry_wikidata.csv,fixed effect (industry-FE robustness),Public Wikidata source; ~59% firm coverage
+industry_raw,Raw Wikidata industry,Industry label as returned by Wikidata (P452),industry_wikidata.csv,source for sector mapping,Granular; mapped to sector
