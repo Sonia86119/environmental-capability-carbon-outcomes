@@ -1,6 +1,12 @@
+# Analysis pipeline: build_analysis_data.py, run_analysis.py, make_figures.py
+# and make_synthetic_demo.py.
 pandas>=2.0
 numpy>=1.24
 statsmodels>=0.14
-openpyxl>=3.1
-requests>=2.28
+scipy>=1.10
 matplotlib>=3.7
+
+# Data access only. Required by lseg_probe_fields.py and lseg_pull.py, which
+# run inside LSEG Workspace CodeBook, where the package is already installed.
+# It is not needed to run the analysis or the synthetic demonstration.
+# lseg-data>=2.0

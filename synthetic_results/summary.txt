@@ -1,0 +1,265 @@
+Results
+==============================================================================
+
+t01_descriptives
+------------------------------------------------------------------------------
+                         sector               variable  count       mean       std        min        25%        50%        75%        max
+                            All                 rating 2151.0  47.034978 22.974588   0.000000  30.011213  46.693678  63.412936 100.000000
+                            All    rating_resource_use 2151.0  55.714322 27.907478   0.000000  35.715692  56.912574  77.325439 100.000000
+                            All      rating_innovation 2151.0  38.355634 27.429035   0.000000  15.331113  36.597687  57.869244 100.000000
+                            All             ln_scope12 1892.0   9.980571  3.067335   0.416439   7.890790   9.882256  12.038452  20.783991
+                            All              ln_scope3 1831.0  13.191670  3.139763   4.859553  10.931651  13.162482  15.318519  26.111566
+                            All ln_scope12_per_revenue 1593.0 -11.225089  2.199212 -18.998567 -12.674683 -11.115026  -9.700279  -4.401386
+                            All  ln_scope12_per_assets 1892.0 -12.004978  2.738522 -23.654428 -13.874819 -12.012174 -10.155806  -3.469749
+                            All                ln_mcap 2151.0  21.347539  1.721630  15.802154  20.237439  21.342949  22.478338  26.917413
+                            All              ln_assets 2151.0  21.874023  2.016107  14.815261  20.488231  21.887562  23.225001  28.025602
+                            All                    roa 2151.0   0.031605  0.124356  -0.382958  -0.052938   0.033188   0.114756   0.517304
+                            All               leverage 2151.0   0.256627  0.175733   0.000000   0.123796   0.243656   0.379712   0.848791
+                            All               firm_age 2039.0  42.737126 27.846374   0.000000  20.000000  40.000000  62.000000 148.000000
+                            All             free_float 2151.0  65.319405 24.983794   0.000000  48.447553  67.056536  86.015237 100.000000
+                            All        reporting_scope 1867.0  94.968644 12.177884   5.000000 100.000000 100.000000 100.000000 100.000000
+                            All    waste_recycled_rate 1533.0   0.684374  0.216463   0.015632   0.539827   0.721522   0.864891   0.998971
+Academic & Educational Services                 rating    5.0  40.790664 23.277548   3.772309  31.674590  54.473974  56.747001  57.285447
+Academic & Educational Services             ln_scope12    4.0   9.322779  4.586626   3.703105   6.640579   9.825067  12.507267  13.937876
+Academic & Educational Services ln_scope12_per_revenue    4.0 -11.893255  2.618231 -14.959235 -13.430166 -11.848973 -10.312062  -8.915840
+Academic & Educational Services              ln_assets    5.0  21.291810  1.878476  18.303960  21.061441  21.305830  22.874900  22.912920
+                Basic Materials                 rating  162.0  45.851447 24.808011   0.000000  28.049568  42.423415  65.653180  99.463483
+                Basic Materials             ln_scope12  147.0  10.097079  3.058696   2.764813   7.897934  10.098607  11.985325  18.099181
+                Basic Materials ln_scope12_per_revenue  135.0 -11.120069  2.358759 -17.740595 -12.720335 -10.962079  -9.585111  -4.401386
+                Basic Materials              ln_assets  162.0  21.806145  1.995789  17.251997  20.421153  21.932559  23.116637  27.209351
+             Consumer Cyclicals                 rating  317.0  47.396276 22.867091   0.000000  29.815926  47.736742  65.146585 100.000000
+             Consumer Cyclicals             ln_scope12  274.0  10.181664  3.100974   1.377118   8.334223   9.989123  12.262734  19.484755
+             Consumer Cyclicals ln_scope12_per_revenue  246.0 -11.127910  1.973658 -16.172392 -12.607267 -11.058806  -9.886706  -5.219052
+             Consumer Cyclicals              ln_assets  317.0  21.928714  2.197751  15.514414  20.452783  21.797801  23.361968  27.716730
+         Consumer Non-Cyclicals                 rating  124.0  49.130910 24.810402   0.000000  30.734951  49.592465  67.528209 100.000000
+         Consumer Non-Cyclicals             ln_scope12  111.0  10.352572  3.102187   2.355250   8.524914  10.082894  12.184788  20.692780
+         Consumer Non-Cyclicals ln_scope12_per_revenue   96.0 -10.988731  1.867549 -16.808490 -12.079486 -10.936033  -9.714809  -5.063856
+         Consumer Non-Cyclicals              ln_assets  124.0  21.844806  2.045612  17.142544  20.287726  21.933805  23.017996  27.008049
+                         Energy                 rating   69.0  49.384189 23.063012   0.000000  30.164219  52.470164  63.369179 100.000000
+                         Energy             ln_scope12   62.0   9.548642  3.119841   3.202608   7.402646   9.627060  11.951523  16.737523
+                         Energy ln_scope12_per_revenue   52.0 -11.309834  2.287032 -15.196657 -12.724387 -11.611415 -10.339569  -6.338719
+                         Energy              ln_assets   69.0  21.986003  1.704701  16.911498  20.874800  22.041332  23.196965  26.312888
+                     Financials                 rating  456.0  48.868674 22.091029   0.671080  31.804332  49.519551  64.079036 100.000000
+                     Financials             ln_scope12  418.0   9.916091  2.942621   2.370841   7.898326   9.752408  11.923511  18.193862
+                     Financials ln_scope12_per_revenue  346.0 -11.292748  2.081367 -16.344441 -12.667329 -11.252441  -9.844331  -4.961280
+                     Financials              ln_assets  456.0  21.974523  1.890988  17.627379  20.679096  21.906336  23.254086  28.025602
+                     Healthcare                 rating  146.0  43.809076 21.516193   0.000000  29.437072  42.623596  58.827213  93.902016
+                     Healthcare             ln_scope12  122.0   9.790740  3.127152   3.147849   7.329387   9.812040  12.241680  16.802490
+                     Healthcare ln_scope12_per_revenue   96.0 -11.301829  2.217114 -16.311806 -12.719751 -11.036073  -9.673697  -6.705472
+                     Healthcare              ln_assets  146.0  21.585705  1.895122  17.036533  20.207284  21.464739  23.128069  25.971045
+                    Industrials                 rating  398.0  48.414090 22.366094   0.000000  32.682721  48.052777  63.010127 100.000000
+                    Industrials             ln_scope12  343.0  10.030353  3.242156   0.416439   7.695725   9.807985  12.200525  20.783991
+                    Industrials ln_scope12_per_revenue  287.0 -11.278333  2.470581 -18.998567 -13.003714 -11.346627  -9.402664  -4.452158
+                    Industrials              ln_assets  398.0  21.906167  2.112708  14.815261  20.578564  22.123395  23.319092  27.932093
+                    Real Estate                 rating  127.0  44.292754 23.300829   0.000000  24.779756  40.683033  61.905653 100.000000
+                    Real Estate             ln_scope12  109.0   9.981992  2.776551   2.137376   8.290473   9.921399  11.767664  17.109362
+                    Real Estate ln_scope12_per_revenue   83.0 -11.216895  1.912820 -16.605722 -12.614308 -10.856547  -9.797519  -6.985578
+                    Real Estate              ln_assets  127.0  21.760797  1.899143  16.877900  20.499954  21.882804  23.178054  27.395836
+                     Technology                 rating  274.0  43.771239 23.264515   0.000000  26.623524  44.512345  59.610219 100.000000
+                     Technology             ln_scope12  242.0   9.765846  3.098667   1.129339   7.871917   9.832359  11.710395  16.763502
+                     Technology ln_scope12_per_revenue  199.0 -11.228694  2.388117 -18.331133 -12.610899 -11.057537  -9.458284  -4.959536
+                     Technology              ln_assets  274.0  21.788745  2.067942  17.252123  20.378758  21.657464  23.386989  27.953217
+                      Utilities                 rating   73.0  47.238926 24.566650   0.468541  27.368367  48.280577  65.151380  98.122846
+                      Utilities             ln_scope12   60.0   9.992869  2.880318   4.153085   7.922201  10.291051  11.750135  20.219364
+                      Utilities ln_scope12_per_revenue   49.0 -11.380160  2.185414 -16.171157 -12.833796 -11.588666 -10.310735  -5.226122
+                      Utilities              ln_assets   73.0  22.061484  1.956675  17.332579  20.867007  22.055052  23.128487  27.258856
+
+t02_selection_score
+------------------------------------------------------------------------------
+         variable  scored_mean  scored_n  unscored_mean  unscored_n  difference  standardised_difference       se
+          ln_mcap    21.347539      2151      19.524332      1431.0    1.823207             1.041439e+00      NaN
+        ln_assets    21.874023      2151      19.881231      1431.0    1.992791             9.780608e-01      NaN
+       ln_revenue    21.074169      1810      18.652948      1227.0    2.421220             1.032704e+00      NaN
+              roa     0.031605      2151       0.027776      1431.0    0.003829             3.133155e-02      NaN
+         leverage     0.256627      2151       0.246439      1431.0    0.010188             5.774738e-02      NaN
+         firm_age    42.737126      2039      34.193975      1361.0    8.543151             3.287984e-01      NaN
+       free_float    65.319405      2151      44.730082      1431.0   20.589323             8.079384e-01      NaN
+   logit: ln_mcap          NaN      3400            NaN         NaN    0.238497             7.600248e-06 0.053282
+ logit: ln_assets          NaN      3400            NaN         NaN    0.300785             3.441706e-11 0.045392
+       logit: roa          NaN      3400            NaN         NaN   -0.240580             5.161472e-01 0.370525
+  logit: leverage          NaN      3400            NaN         NaN   -0.360766             1.474068e-01 0.249019
+  logit: firm_age          NaN      3400            NaN         NaN    0.009059             1.261832e-07 0.001714
+logit: free_float          NaN      3400            NaN         NaN    0.028370             7.158389e-56 0.001802
+
+t03_correlations
+------------------------------------------------------------------------------
+             panel               variable  rating  rating_resource_use  rating_innovation  rating_emissions_theme  rating_pillar  ln_mcap  ln_assets  ln_revenue    roa  leverage  firm_age  free_float  ln_scope12  ln_scope12_per_revenue      vif
+       correlation                 rating   1.000                0.834              0.827                   0.570          0.925    0.511      0.532       0.494  0.001     0.130     0.120       0.084       0.321                  -0.016      NaN
+       correlation    rating_resource_use   0.834                1.000              0.379                   0.476          0.772    0.408      0.430       0.400 -0.014     0.129     0.071       0.060       0.255                   0.011      NaN
+       correlation      rating_innovation   0.827                0.379              1.000                   0.470          0.765    0.441      0.454       0.420  0.015     0.087     0.129       0.080       0.275                  -0.037      NaN
+       correlation rating_emissions_theme   0.570                0.476              0.470                   1.000          0.528    0.306      0.307       0.301 -0.020     0.081     0.051       0.055       0.169                  -0.023      NaN
+       correlation          rating_pillar   0.925                0.772              0.765                   0.528          1.000    0.454      0.474       0.452  0.003     0.135     0.098       0.092       0.292                  -0.008      NaN
+       correlation                ln_mcap   0.511                0.408              0.441                   0.306          0.454    1.000      0.844       0.801  0.155     0.035     0.011       0.157       0.440                  -0.188      NaN
+       correlation              ln_assets   0.532                0.430              0.454                   0.307          0.474    0.844      1.000       0.818 -0.006     0.120     0.170      -0.026       0.479                  -0.159      NaN
+       correlation             ln_revenue   0.494                0.400              0.420                   0.301          0.452    0.801      0.818       1.000  0.008     0.019     0.042      -0.025       0.703                  -0.047      NaN
+       correlation                    roa   0.001               -0.014              0.015                  -0.020          0.003    0.155     -0.006       0.008  1.000    -0.212    -0.004      -0.031      -0.086                  -0.117      NaN
+       correlation               leverage   0.130                0.129              0.087                   0.081          0.135    0.035      0.120       0.019 -0.212     1.000    -0.041      -0.017       0.150                   0.200      NaN
+       correlation               firm_age   0.120                0.071              0.129                   0.051          0.098    0.011      0.170       0.042 -0.004    -0.041     1.000      -0.036       0.035                   0.033      NaN
+       correlation             free_float   0.084                0.060              0.080                   0.055          0.092    0.157     -0.026      -0.025 -0.031    -0.017    -0.036       1.000      -0.024                  -0.011      NaN
+       correlation             ln_scope12   0.321                0.255              0.275                   0.169          0.292    0.440      0.479       0.703 -0.086     0.150     0.035      -0.024       1.000                   0.678      NaN
+       correlation ln_scope12_per_revenue  -0.016                0.011             -0.037                  -0.023         -0.008   -0.188     -0.159      -0.047 -0.117     0.200     0.033      -0.011       0.678                   1.000      NaN
+variance inflation                 rating     NaN                  NaN                NaN                     NaN            NaN      NaN        NaN         NaN    NaN       NaN       NaN         NaN         NaN                     NaN 1.451332
+variance inflation                ln_mcap     NaN                  NaN                NaN                     NaN            NaN      NaN        NaN         NaN    NaN       NaN       NaN         NaN         NaN                     NaN 4.864496
+variance inflation              ln_assets     NaN                  NaN                NaN                     NaN            NaN      NaN        NaN         NaN    NaN       NaN       NaN         NaN         NaN                     NaN 4.844396
+variance inflation                    roa     NaN                  NaN                NaN                     NaN            NaN      NaN        NaN         NaN    NaN       NaN       NaN         NaN         NaN                     NaN 1.158555
+variance inflation               leverage     NaN                  NaN                NaN                     NaN            NaN      NaN        NaN         NaN    NaN       NaN       NaN         NaN         NaN                     NaN 1.083013
+variance inflation               firm_age     NaN                  NaN                NaN                     NaN            NaN      NaN        NaN         NaN    NaN       NaN       NaN         NaN         NaN                     NaN 1.125621
+variance inflation             free_float     NaN                  NaN                NaN                     NaN            NaN      NaN        NaN         NaN    NaN       NaN       NaN         NaN         NaN                     NaN 1.164811
+
+t04_main
+------------------------------------------------------------------------------
+               outcome predictor     coef       se        t            p    n       r2 controls         fixed_effects weighted
+            ln_scope12    rating 0.018389 0.002861 6.428079 1.292264e-10 1892 0.218061  ln_mcap         country_group       no
+            ln_scope12    rating 0.018453 0.002987 6.176690 6.545944e-10 1892 0.221140  ln_mcap country_group, sector       no
+             ln_scope3    rating 0.015090 0.002857 5.281814 1.279110e-07 1831 0.216518  ln_mcap         country_group       no
+             ln_scope3    rating 0.015062 0.002874 5.239955 1.606155e-07 1831 0.220249  ln_mcap country_group, sector       no
+ln_scope12_per_revenue    rating 0.009700 0.003417 2.838790 4.528500e-03 1593 0.054770  ln_mcap         country_group       no
+ln_scope12_per_revenue    rating 0.009694 0.003529 2.746719 6.019461e-03 1593 0.057019  ln_mcap country_group, sector       no
+ ln_scope3_per_revenue    rating 0.007253 0.002884 2.514776 1.191082e-02 1533 0.051766  ln_mcap         country_group       no
+ ln_scope3_per_revenue    rating 0.007148 0.002906 2.459706 1.390507e-02 1533 0.055457  ln_mcap country_group, sector       no
+ ln_scope12_per_assets    rating 0.006763 0.003033 2.229539 2.577806e-02 1892 0.024998  ln_mcap         country_group       no
+ ln_scope12_per_assets    rating 0.006782 0.003124 2.171118 2.992225e-02 1892 0.029764  ln_mcap country_group, sector       no
+  ln_scope3_per_assets    rating 0.003670 0.002940 1.248167 2.119698e-01 1831 0.025392  ln_mcap         country_group       no
+  ln_scope3_per_assets    rating 0.003610 0.002966 1.217185 2.235338e-01 1831 0.030264  ln_mcap country_group, sector       no
+
+t05_denominators
+------------------------------------------------------------------------------
+                                 outcome predictor     coef       se        t            p    n       r2 controls         fixed_effects weighted
+                  ln_scope12_per_revenue    rating 0.009694 0.003529 2.746719 6.019461e-03 1593 0.057019  ln_mcap country_group, sector       no
+  ln_scope12_per_revenue_sector_demeaned    rating 0.009615 0.003548 2.709749 6.733405e-03 1593 0.057695  ln_mcap country_group, sector       no
+                   ln_scope12_per_assets    rating 0.006782 0.003124 2.171118 2.992225e-02 1892 0.029764  ln_mcap country_group, sector       no
+   ln_scope12_per_assets_sector_demeaned    rating 0.006488 0.003158 2.054521 3.992530e-02 1892 0.028933  ln_mcap country_group, sector       no
+                ln_scope12_per_employees    rating 0.010546 0.003111 3.389749 6.995674e-04 1892 0.025716  ln_mcap country_group, sector       no
+ln_scope12_per_employees_sector_demeaned    rating 0.010329 0.003125 3.305290 9.487831e-04 1892 0.025046  ln_mcap country_group, sector       no
+                       ln_scope12_per_ev    rating 0.017514 0.003013 5.813348 6.123563e-09 1892 0.050463  ln_mcap country_group, sector       no
+       ln_scope12_per_ev_sector_demeaned    rating 0.017210 0.003050 5.642440 1.676572e-08 1892 0.048111  ln_mcap country_group, sector       no
+                   ln_scope12_per_energy    rating 0.001610 0.002407 0.669110 5.034251e-01 1586 0.055867  ln_mcap country_group, sector       no
+   ln_scope12_per_energy_sector_demeaned    rating 0.001462 0.002364 0.618485 5.362557e-01 1586 0.059699  ln_mcap country_group, sector       no
+
+t06_components
+------------------------------------------------------------------------------
+                   outcome                predictor     coef       se        t            p    n       r2 controls         fixed_effects weighted
+                ln_scope12                   rating 0.018453 0.002987 6.176690 6.545944e-10 1892 0.221140  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue                   rating 0.009694 0.003529 2.746719 6.019461e-03 1593 0.057019  ln_mcap country_group, sector       no
+                ln_scope12      rating_resource_use 0.011066 0.001987 5.567890 2.578427e-08 1892 0.215480  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue      rating_resource_use 0.007950 0.002087 3.809911 1.390166e-04 1593 0.057720  ln_mcap country_group, sector       no
+                ln_scope12        rating_innovation 0.011906 0.002946 4.041148 5.319008e-05 1892 0.216342  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue        rating_innovation 0.004027 0.003031 1.328398 1.840465e-01 1593 0.051712  ln_mcap country_group, sector       no
+                ln_scope12   rating_emissions_theme 0.004847 0.001759 2.755538 5.859567e-03 1892 0.208833  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue   rating_emissions_theme 0.002946 0.001993 1.477833 1.394525e-01 1593 0.050784  ln_mcap country_group, sector       no
+                ln_scope12       rating_three_theme 0.016345 0.002721 6.007653 1.882277e-09 1892 0.217211  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue       rating_three_theme 0.008819 0.003442 2.562539 1.039099e-02 1593 0.055226  ln_mcap country_group, sector       no
+                ln_scope12               rating_pca 0.361193 0.058654 6.158063 7.363988e-10 1892 0.221149  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue               rating_pca 0.188991 0.069222 2.730198 6.329623e-03 1593 0.056966  ln_mcap country_group, sector       no
+                ln_scope12            rating_pillar 0.015433 0.002958 5.217061 1.817847e-07 1892 0.219004  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue            rating_pillar 0.008299 0.003398 2.442551 1.458387e-02 1593 0.056111  ln_mcap country_group, sector       no
+                ln_scope12               rating_esg 0.015918 0.002934 5.424554 5.809935e-08 1892 0.214419  ln_mcap country_group, sector       no
+    ln_scope12_per_revenue               rating_esg 0.009581 0.003667 2.612951 8.976407e-03 1593 0.054628  ln_mcap country_group, sector       no
+correlation between themes resource use, innovation 0.378946      NaN      NaN          NaN 2151      NaN      NaN                   NaN      NaN
+
+t07_industry
+------------------------------------------------------------------------------
+               outcome                 predictor      coef       se         t            p    n       r2                                 controls                  fixed_effects weighted
+            ln_scope12                    rating  0.018389 0.002861  6.428079 1.292264e-10 1892 0.218061                                  ln_mcap                  country_group       no
+            ln_scope12                    rating  0.018453 0.002987  6.176690 6.545944e-10 1892 0.221140                                  ln_mcap          country_group, sector       no
+            ln_scope12                    rating  0.018453 0.002987  6.176690 6.545944e-10 1892 0.221140                                  ln_mcap country_group, business_sector       no
+            ln_scope12                    rating  0.023751 0.009418  2.521958 1.167037e-02  269 0.244342               ln_mcap | carbon intensive          country_group, sector       no
+            ln_scope12                    rating  0.017410 0.002944  5.914501 3.328829e-09 1623 0.225014                  ln_mcap | other sectors          country_group, sector       no
+            ln_scope12        rating_x_intensive  0.003541 0.006845  0.517337 6.049213e-01 1892 0.218165 interaction with carbon-intensive sector                  country_group       no
+            ln_scope12 rating_x_sector_intensity  0.010710 0.007949  1.347275 1.778916e-01 1892 0.223206 interaction with sector carbon intensity                  country_group       no
+ln_scope12_per_revenue                    rating  0.009700 0.003417  2.838790 4.528500e-03 1593 0.054770                                  ln_mcap                  country_group       no
+ln_scope12_per_revenue                    rating  0.009694 0.003529  2.746719 6.019461e-03 1593 0.057019                                  ln_mcap          country_group, sector       no
+ln_scope12_per_revenue                    rating  0.009694 0.003529  2.746719 6.019461e-03 1593 0.057019                                  ln_mcap country_group, business_sector       no
+ln_scope12_per_revenue                    rating  0.010633 0.008847  1.201989 2.293679e-01  236 0.115800               ln_mcap | carbon intensive          country_group, sector       no
+ln_scope12_per_revenue                    rating  0.009303 0.003834  2.426298 1.525376e-02 1357 0.058378                  ln_mcap | other sectors          country_group, sector       no
+ln_scope12_per_revenue        rating_x_intensive -0.000223 0.007657 -0.029091 9.767916e-01 1593 0.054822 interaction with carbon-intensive sector                  country_group       no
+ln_scope12_per_revenue rating_x_sector_intensity -0.000027 0.006872 -0.003947 9.968510e-01 1593 0.058706 interaction with sector carbon intensity                  country_group       no
+
+t08_disclosure
+------------------------------------------------------------------------------
+               outcome          predictor      coef        se            p    n         r2                                       controls         fixed_effects         weighted         t
+     discloses_scope12             rating  0.024836  0.004751 1.719248e-07 2039   0.143823                                sector, country       sector, country            logit       NaN
+     discloses_scope12            ln_mcap  0.001528  0.107153 9.886192e-01 2039   0.143823                                sector, country       sector, country            logit       NaN
+     discloses_scope12          ln_assets  0.249275  0.092424 6.995334e-03 2039   0.143823                                sector, country       sector, country            logit       NaN
+     discloses_scope12                roa  0.226319  0.735991 7.584613e-01 2039   0.143823                                sector, country       sector, country            logit       NaN
+     discloses_scope12           leverage -0.602405  0.499570 2.278764e-01 2039   0.143823                                sector, country       sector, country            logit       NaN
+     discloses_scope12           firm_age -0.000565  0.003284 8.634156e-01 2039   0.143823                                sector, country       sector, country            logit       NaN
+     discloses_scope12         free_float  0.005032  0.003544 1.556480e-01 2039   0.143823                                sector, country       sector, country            logit       NaN
+     discloses_scope12 propensity overlap  0.371842  0.980000          NaN 2039 386.148533 min and max propensity; r2 column is effect...                   NaN       diagnostic       NaN
+            ln_scope12             rating  0.018754  0.003135 2.201154e-09 1797   0.232644                                        ln_mcap country_group, sector              ipw  5.982221
+ln_scope12_per_revenue             rating  0.009879  0.004132 1.680318e-02 1514   0.063139                                        ln_mcap country_group, sector              ipw  2.390986
+            ln_scope12             rating  0.018926  0.003130 1.477685e-09 1797   0.222878                                        ln_mcap country_group, sector entropy balanced  6.046781
+     discloses_scope12   balance: ln_mcap 21.341934 21.444653          NaN 1858        NaN population mean | discloser mean | reweight...                   NaN entropy balanced 21.341933
+     discloses_scope12 balance: ln_assets 21.857793 21.986517          NaN 1858        NaN population mean | discloser mean | reweight...                   NaN entropy balanced 21.857793
+     discloses_scope12       balance: roa  0.032381  0.032972          NaN 1858        NaN population mean | discloser mean | reweight...                   NaN entropy balanced  0.032381
+     discloses_scope12  balance: leverage  0.255625  0.255825          NaN 1858        NaN population mean | discloser mean | reweight...                   NaN entropy balanced  0.255625
+     discloses_scope12  balance: firm_age 42.737126 43.018837          NaN 1858        NaN population mean | discloser mean | reweight...                   NaN entropy balanced 42.737123
+      discloses_scope3             rating  0.040228  0.004105 1.130979e-22 2039   0.195010                                sector, country       sector, country            logit       NaN
+      discloses_scope3            ln_mcap  0.367633  0.090083 4.483237e-05 2039   0.195010                                sector, country       sector, country            logit       NaN
+      discloses_scope3          ln_assets -0.090714  0.076494 2.356636e-01 2039   0.195010                                sector, country       sector, country            logit       NaN
+      discloses_scope3                roa  1.316841  0.611444 3.126691e-02 2039   0.195010                                sector, country       sector, country            logit       NaN
+      discloses_scope3           leverage -0.254442  0.408550 5.334197e-01 2039   0.195010                                sector, country       sector, country            logit       NaN
+      discloses_scope3           firm_age -0.000607  0.002656 8.193328e-01 2039   0.195010                                sector, country       sector, country            logit       NaN
+      discloses_scope3         free_float -0.004491  0.002977 1.314563e-01 2039   0.195010                                sector, country       sector, country            logit       NaN
+      discloses_scope3 propensity overlap  0.173159  0.980000          NaN 2039 474.424976 min and max propensity; r2 column is effect...                   NaN       diagnostic       NaN
+             ln_scope3             rating  0.016056  0.003281 9.875061e-07 1729   0.235385                                        ln_mcap country_group, sector              ipw  4.894112
+ ln_scope3_per_revenue             rating  0.008147  0.003443 1.796054e-02 1449   0.064028                                        ln_mcap country_group, sector              ipw  2.366431
+             ln_scope3             rating  0.016257  0.003148 2.423699e-07 1729   0.219000                                        ln_mcap country_group, sector entropy balanced  5.163504
+      discloses_scope3   balance: ln_mcap 21.341934 21.545683          NaN 1730        NaN population mean | discloser mean | reweight...                   NaN entropy balanced 21.341937
+      discloses_scope3 balance: ln_assets 21.857793 22.066149          NaN 1730        NaN population mean | discloser mean | reweight...                   NaN entropy balanced 21.857796
+      discloses_scope3       balance: roa  0.032381  0.036876          NaN 1730        NaN population mean | discloser mean | reweight...                   NaN entropy balanced  0.032381
+      discloses_scope3  balance: leverage  0.255625  0.256089          NaN 1730        NaN population mean | discloser mean | reweight...                   NaN entropy balanced  0.255624
+      discloses_scope3  balance: firm_age 42.737126 42.958960          NaN 1730        NaN population mean | discloser mean | reweight...                   NaN entropy balanced 42.737087
+
+t09_lagged
+------------------------------------------------------------------------------
+                 outcome           predictor          coef           se         t            p    n       r2                         controls         fixed_effects weighted
+              ln_scope12         rating_base  1.907256e-02 3.079220e-03  6.193960 5.867128e-10 1379 0.233090                          ln_mcap country_group, sector       no
+               ln_scope3         rating_base  1.695375e-02 3.788842e-03  4.474653 7.653564e-06 1338 0.226268                          ln_mcap country_group, sector       no
+  ln_scope12_per_revenue         rating_base  1.127384e-02 4.055303e-03  2.780024 5.435495e-03 1170 0.064906                          ln_mcap country_group, sector       no
+   ln_scope12_per_assets         rating_base  7.386689e-03 3.212454e-03  2.299391 2.148274e-02 1379 0.036608                          ln_mcap country_group, sector       no
+ln_scope12_per_employees         rating_base  1.106378e-02 3.255726e-03  3.398254 6.781754e-04 1379 0.031503                          ln_mcap country_group, sector       no
+   ln_scope12_per_energy         rating_base  2.458793e-03 3.133975e-03  0.784561 4.327112e-01 1149 0.069420                          ln_mcap country_group, sector       no
+              ln_scope12 rating_resource_use  1.222342e-02 2.462439e-03  4.963947 6.907489e-07 1379 0.228702                          ln_mcap country_group, sector       no
+               ln_scope3 rating_resource_use  9.782588e-03 3.925065e-03  2.492338 1.269054e-02 1338 0.221761                          ln_mcap country_group, sector       no
+  ln_scope12_per_revenue rating_resource_use  1.002399e-02 2.678981e-03  3.741718 1.827665e-04 1170 0.068323                          ln_mcap country_group, sector       no
+   ln_scope12_per_assets rating_resource_use  5.471623e-03 2.660249e-03  2.056809 3.970461e-02 1379 0.036429                          ln_mcap country_group, sector       no
+ln_scope12_per_employees rating_resource_use  7.354860e-03 2.431883e-03  3.024348 2.491697e-03 1379 0.029468                          ln_mcap country_group, sector       no
+   ln_scope12_per_energy rating_resource_use  9.914745e-04 2.010200e-03  0.493222 6.218558e-01 1149 0.068694                          ln_mcap country_group, sector       no
+              ln_scope12   rating_innovation  1.136673e-02 3.506917e-03  3.241232 1.190141e-03 1379 0.226351                          ln_mcap country_group, sector       no
+               ln_scope3   rating_innovation  1.083055e-02 2.420953e-03  4.473671 7.688815e-06 1338 0.222430                          ln_mcap country_group, sector       no
+  ln_scope12_per_revenue   rating_innovation  3.377917e-03 3.525933e-03  0.958021 3.380524e-01 1170 0.056735                          ln_mcap country_group, sector       no
+   ln_scope12_per_assets   rating_innovation  3.575211e-03 4.056520e-03  0.881349 3.781288e-01 1379 0.034811                          ln_mcap country_group, sector       no
+ln_scope12_per_employees   rating_innovation  6.297466e-03 2.924964e-03  2.153007 3.131816e-02 1379 0.027310                          ln_mcap country_group, sector       no
+   ln_scope12_per_energy   rating_innovation  2.048710e-03 2.313759e-03  0.885447 3.759157e-01 1149 0.069515                          ln_mcap country_group, sector       no
+              ln_scope12       rating_change -1.573890e-15 2.538335e-16 -6.200482 5.629065e-10 1379 0.233090 change in rating over the window country_group, sector       no
+  ln_scope12_per_revenue       rating_change  1.416781e-15 3.437966e-16  4.120986 3.772544e-05 1170 0.064906 change in rating over the window country_group, sector       no
+
+t10_waste
+------------------------------------------------------------------------------
+            outcome predictor      coef       se         t            p    n       r2 controls         fixed_effects weighted
+  ln_waste_recycled    rating  0.009924 0.002004  4.952614 7.322302e-07 1533 0.204683  ln_mcap         country_group       no
+  ln_waste_recycled    rating  0.009984 0.002046  4.879994 1.060889e-06 1533 0.208392  ln_mcap country_group, sector       no
+waste_recycled_rate    rating  0.000014 0.000295  0.048050 9.616767e-01 1533 0.023406  ln_mcap         country_group       no
+waste_recycled_rate    rating -0.000024 0.000311 -0.075770 9.396022e-01 1533 0.030207  ln_mcap country_group, sector       no
+     ln_waste_total    rating  0.009666 0.001876  5.152123 2.575533e-07 1533 0.225331  ln_mcap         country_group       no
+     ln_waste_total    rating  0.009782 0.001871  5.227765 1.715710e-07 1533 0.229524  ln_mcap country_group, sector       no
+    hazardous_share    rating  0.000238 0.000105  2.269568 2.323382e-02 1533 0.016687  ln_mcap         country_group       no
+    hazardous_share    rating  0.000245 0.000101  2.422461 1.541579e-02 1533 0.024551  ln_mcap country_group, sector       no
+
+t11_robustness
+------------------------------------------------------------------------------
+               outcome predictor     coef       se        t            p    n       r2                               controls               fixed_effects weighted
+            ln_scope12    rating 0.022363 0.003914 5.713215 1.108616e-08  739 0.255996 ln_mcap | firm-reported emissions only       country_group, sector       no
+ln_scope12_per_revenue    rating 0.014298 0.004291 3.331759 8.629893e-04  618 0.083977 ln_mcap | firm-reported emissions only       country_group, sector       no
+            ln_scope12    rating 0.020651 0.004109 5.025275 5.027116e-07 1593 0.232213      ln_mcap | dated observations only       country_group, sector       no
+ln_scope12_per_revenue    rating 0.009694 0.003529 2.746719 6.019461e-03 1593 0.057019      ln_mcap | dated observations only       country_group, sector       no
+            ln_scope12    rating 0.018447 0.002938 6.279428 3.398215e-10 1892 0.221145            ln_mcap | country cutoff 10    country_group_10, sector       no
+ln_scope12_per_revenue    rating 0.009677 0.003536 2.737007 6.200089e-03 1593 0.057956            ln_mcap | country cutoff 10    country_group_10, sector       no
+            ln_scope12    rating 0.018453 0.002987 6.176690 6.545944e-10 1892 0.221140            ln_mcap | country cutoff 50    country_group_50, sector       no
+ln_scope12_per_revenue    rating 0.009694 0.003529 2.746719 6.019461e-03 1593 0.057019            ln_mcap | country cutoff 50    country_group_50, sector       no
+            ln_scope12    rating 0.016839 0.003187 5.284014 1.263835e-07 1892 0.240973                         ln_mcap, roa_w       country_group, sector       no
+            ln_scope12    rating 0.016105 0.003022 5.328987 9.876214e-08 1892 0.236937                    ln_mcap, leverage_w       country_group, sector       no
+            ln_scope12    rating 0.018132 0.002994 6.056534 1.390857e-09 8649 0.222362            ln_mcap | pooled firm-years country_group, sector, year       no
+ln_scope12_per_revenue    rating 0.008555 0.003165 2.702905 6.873635e-03 7445 0.063907            ln_mcap | pooled firm-years country_group, sector, year       no
+

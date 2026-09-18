@@ -1,0 +1,33 @@
+outcome,predictor,coef,se,p,n,r2,controls,fixed_effects,weighted,t
+discloses_scope12,rating,0.05136715693898754,0.005112649861049301,9.463837416843468e-24,1886,0.35180909414878614,"sector, country","sector, country",logit,
+discloses_scope12,ln_mcap,0.07488691996900872,0.11397924366777883,0.5111664923229235,1886,0.35180909414878614,"sector, country","sector, country",logit,
+discloses_scope12,ln_assets,0.2945656790352444,0.10225708575918123,0.003968707772795091,1886,0.35180909414878614,"sector, country","sector, country",logit,
+discloses_scope12,roa,0.7334954524427373,0.6177223395535101,0.2350622553397953,1886,0.35180909414878614,"sector, country","sector, country",logit,
+discloses_scope12,leverage,0.7277349264411351,0.5339165867549535,0.17287860376958808,1886,0.35180909414878614,"sector, country","sector, country",logit,
+discloses_scope12,firm_age,-0.008471680558054112,0.00277441775058424,0.002261898204973591,1886,0.35180909414878614,"sector, country","sector, country",logit,
+discloses_scope12,free_float,0.0005219333022825868,0.0036429872431384008,0.8860764016265505,1886,0.35180909414878614,"sector, country","sector, country",logit,
+discloses_scope12,propensity overlap,0.0908231571001509,0.98,,1886,376.21338928915327,min and max propensity; r2 column is effective sample size,,diagnostic,
+ln_scope12,rating,0.01790904912429175,0.0031220181500138952,9.672761963098214e-09,1586,0.5846384524224946,ln_mcap,"country_group, sector",ipw,5.736369317459619
+ln_scope12_per_revenue,rating,0.008600826790049433,0.0035066534342016293,0.014178202523696351,1452,0.3735616666778109,ln_mcap,"country_group, sector",ipw,2.4527165148863963
+ln_scope12,rating,0.01733728293054174,0.002534102527424907,7.832061062214047e-12,1588,0.5687139992485417,ln_mcap,"country_group, sector",entropy balanced,6.841587008778
+discloses_scope12,balance: ln_mcap,21.318802854937907,21.473684580060702,,1659,,population mean | discloser mean | reweighted mean,,entropy balanced,21.318807724104182
+discloses_scope12,balance: ln_assets,21.76299660908875,21.94786421249986,,1659,,population mean | discloser mean | reweighted mean,,entropy balanced,21.76298654097444
+discloses_scope12,balance: roa,0.034972376440601756,0.03670473118827855,,1659,,population mean | discloser mean | reweighted mean,,entropy balanced,0.03497194932718315
+discloses_scope12,balance: leverage,0.24346115090258985,0.2549899493559636,,1659,,population mean | discloser mean | reweighted mean,,entropy balanced,0.24345954680541423
+discloses_scope12,balance: firm_age,38.67584745762712,38.755274261603375,,1659,,population mean | discloser mean | reweighted mean,,entropy balanced,38.675769129329176
+discloses_scope3,rating,0.04261571189515639,0.003944496778788082,3.30103003785939e-27,1886,0.3713458702250664,"sector, country","sector, country",logit,
+discloses_scope3,ln_mcap,0.0295206558178664,0.09599680751428462,0.7584498412924798,1886,0.3713458702250664,"sector, country","sector, country",logit,
+discloses_scope3,ln_assets,0.356134119991579,0.08696042213192301,4.2151527783802966e-05,1886,0.3713458702250664,"sector, country","sector, country",logit,
+discloses_scope3,roa,0.8234499018623644,0.5974675715126565,0.1681311661920456,1886,0.3713458702250664,"sector, country","sector, country",logit,
+discloses_scope3,leverage,0.8365598167017996,0.44225890892313724,0.05854946231124246,1886,0.3713458702250664,"sector, country","sector, country",logit,
+discloses_scope3,firm_age,-0.0021580892012186747,0.0023527566301958813,0.35900648949361025,1886,0.3713458702250664,"sector, country","sector, country",logit,
+discloses_scope3,free_float,-0.00015068739001620164,0.003122070322123543,0.9615048779975965,1886,0.3713458702250664,"sector, country","sector, country",logit,
+discloses_scope3,propensity overlap,0.059343882219035436,0.98,,1886,289.0318252933583,min and max propensity; r2 column is effective sample size,,diagnostic,
+ln_scope3,rating,0.03186366688220574,0.0019294091536513115,2.874552364876719e-61,1507,0.5355028225820996,ln_mcap,"country_group, sector",ipw,16.514727745488987
+ln_scope3_per_revenue,rating,0.0208276271414648,0.0018882536652657022,2.735600752365793e-28,1377,0.21182034041354403,ln_mcap,"country_group, sector",ipw,11.030100205596094
+ln_scope3,rating,0.027949951060976072,0.002141761054712407,6.35593612854534e-39,1509,0.5201590283452966,ln_mcap,"country_group, sector",entropy balanced,13.049985664590933
+discloses_scope3,balance: ln_mcap,21.318802854937907,21.58618359744958,,1511,,population mean | discloser mean | reweighted mean,,entropy balanced,21.3188041585411
+discloses_scope3,balance: ln_assets,21.76299660908875,22.086685283751873,,1511,,population mean | discloser mean | reweighted mean,,entropy balanced,21.762993595185005
+discloses_scope3,balance: roa,0.034972376440601756,0.036270926755987934,,1511,,population mean | discloser mean | reweighted mean,,entropy balanced,0.034972367318397465
+discloses_scope3,balance: leverage,0.24346115090258985,0.2640550002040694,,1511,,population mean | discloser mean | reweighted mean,,entropy balanced,0.24346106519189195
+discloses_scope3,balance: firm_age,38.67584745762712,39.229649238914625,,1511,,population mean | discloser mean | reweighted mean,,entropy balanced,38.67583774448559

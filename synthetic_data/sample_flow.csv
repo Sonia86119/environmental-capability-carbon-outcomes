@@ -1,0 +1,16 @@
+step,detail,firms,firm_years
+Raw universe,all instruments in the extract,4329,21675
+Drop non-operating instruments,"747 funds and index products, no industry classification",3582,
+Assign fiscal years,2486 of 17940 firm-years dated by position,3582,17940
+Restrict to the analysis window,42 rows outside 2021-2026,3582,17898
+Resolve duplicate firm-years,29 duplicate rows removed,3582,17869
+"Cross-section: scored firms, latest year",year range 2021-2026,2151,
+  with an industry classification,,2151,
+  with Scope 1+2 emissions,,1960,
+  with Scope 1+2 and revenue,,1593,
+  with Scope 1+2 and employees,,1892,
+  with Scope 1+2 and ev,,1892,
+  with Scope 1+2 and assets,,1892,
+  with Scope 1+2 and energy,,1586,
+Lagged sample: 2021 rating to 2025 outcome,,1574,
+  with a later Scope 1+2 figure,,1379,

@@ -1,12 +1,16 @@
-# Proprietary LSEG/Refinitiv data — NEVER commit
+# Licensed LSEG data. The two extracts and everything built from them stay out
+# of version control; the licence does not permit redistribution.
 data/
-*.xlsx
-*.pdf
-refinitiv_clean_fy0_cross_section.csv
-waste_recycled.csv
-identifiers_trbc.csv
-identifiers_for_trbc.csv
-synthetic_demo.csv
+
+# The synthetic demonstration carries no licensed value and is tracked, so the
+# pipeline can be run and inspected without a licence. The results tables are
+# tracked as well, since they are the output the paper reports.
+!synthetic_data/
+!synthetic_results/
+
+# The two synthetic extracts are tracked; the analysis files built from them
+# are not, since one command regenerates them and the panel is large.
+synthetic_data/analysis_*.csv
 
 # Python
 __pycache__/
@@ -14,5 +18,6 @@ __pycache__/
 .venv/
 venv/
 
-# generated figure files live with the paper; the generator script IS tracked
-figures/
+# Figures for the manuscript are written into the paper source tree; the
+# generator is tracked, the output is not.
+/figures/

@@ -1,0 +1,70 @@
+Sample construction
+======================================================================
+
+Raw universe                                       4329  all instruments in the extract
+Drop non-operating instruments                     3582  747 funds and index products, no industry classification
+Assign fiscal years                                3582  2486 of 17940 firm-years dated by position
+Restrict to the analysis window                    3582  42 rows outside 2021-2026
+Resolve duplicate firm-years                       3582  29 duplicate rows removed
+Cross-section: scored firms, latest year           2151  year range 2021-2026
+  with an industry classification                  2151  
+  with Scope 1+2 emissions                         1960  
+  with Scope 1+2 and revenue                       1593  
+  with Scope 1+2 and employees                     1892  
+  with Scope 1+2 and ev                            1892  
+  with Scope 1+2 and assets                        1892  
+  with Scope 1+2 and energy                        1586  
+Lagged sample: 2021 rating to 2025 outcome         1574  
+  with a later Scope 1+2 figure                    1379  
+
+Non-positive values excluded by log transformation
+----------------------------------------------------------------------
+  Scope 1+2 total                                 360 firm-years
+  Scope 1+2 per assets                            360 firm-years
+  Scope 1+2 per employees                         360 firm-years
+  Scope 1+2 per ev                                360 firm-years
+  Scope 1+2 per revenue                           310 firm-years
+  Scope 1+2 per energy                            306 firm-years
+  Scope 3 total                                     6 firm-years
+  Scope 3 per assets                                6 firm-years
+  Scope 3 per revenue                               6 firm-years
+  Scope 3 per employees                             6 firm-years
+  Scope 3 per ev                                    6 firm-years
+  Scope 3 per energy                                6 firm-years
+  Employees                                         5 firm-years
+
+Emissions figures: reported by the firm or estimated
+----------------------------------------------------------------------
+  nan                                           12862 firm-years
+  Reported                                       3849 firm-years
+  Median                                          607 firm-years
+  CO2                                             276 firm-years
+  Energy                                          275 firm-years
+
+Cross-section by sector
+----------------------------------------------------------------------
+  Financials                                      456 firms
+  Industrials                                     398 firms
+  Consumer Cyclicals                              317 firms
+  Technology                                      274 firms
+  Basic Materials                                 162 firms
+  Healthcare                                      146 firms
+  Real Estate                                     127 firms
+  Consumer Non-Cyclicals                          124 firms
+  Utilities                                        73 firms
+  Energy                                           69 firms
+  Academic & Educational Services                   5 firms
+
+Cross-section by observation year
+----------------------------------------------------------------------
+  2021                                              1 firms
+  2023                                              4 firms
+  2024                                             17 firms
+  2025                                           1885 firms
+  2026                                            244 firms
+
+Country groups (cutoff 25 firms)
+----------------------------------------------------------------------
+  26 groups including the residual category
+  cutoff 10 gives 27 groups
+  cutoff 50 gives 26 groups

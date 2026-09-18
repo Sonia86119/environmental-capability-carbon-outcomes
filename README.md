@@ -1,66 +1,120 @@
 # Replication package
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20814674.svg)](https://doi.org/10.5281/zenodo.20814674) — *Do Corporate Environmental Capability Scores Track Carbon Outcomes?*
+**What Do Corporate Environmental Ratings Measure? Scale, Disclosure and Carbon Outcomes in
+European Listed Firms**
 
-Chalak, Keshtkar & Bidollahkhany. This package reproduces every table in the paper.
+The package holds everything needed to reproduce the paper: the data-access protocol that
+regenerates the licensed extracts, the code that builds the analysis files from them, the code
+that estimates every model and writes every table, the figure generator, and a synthetic
+demonstration dataset so that the whole pipeline can be run and inspected without a licence.
 
-**The raw LSEG/Refinitiv data is proprietary and is NOT included** (licence prohibits
-redistribution). The package ships the analysis code, a variable dictionary, and a synthetic
-demonstration dataset so the pipeline can be run end-to-end without the licensed data.
+**The raw LSEG data are proprietary and are not included.** The licence does not permit
+redistribution. A reader with an LSEG Workspace licence regenerates them with the protocol below;
+a reader without one runs the same code on the synthetic extracts.
 
-## Data source
-The industry/sector classification used in the industry-fixed-effects robustness check is from the openly available **Wikidata** knowledge base (`industry_wikidata.csv`, rebuilt by `fetch_industry_wikidata.py`); it is not proprietary and is included in this repository.
+## Data source and licence
 
-All other firm-level variables are drawn from **LSEG / Refinitiv** (London Stock Exchange Group, Data &
-Analytics): ESG theme and pillar scores, CO2-equivalent emissions (Scope 1, 2 and 3), waste
-recycled, total assets, market capitalisation, and the TRBC industry classification, exported as a
-fiscal-year-0 (FY0) cross-section of listed firms. The data are accessed under an institutional
-LSEG/Refinitiv licence and are cited in the paper as LSEG (2024). They cannot be redistributed;
-see the data-access protocol below for how a licensed user regenerates the inputs.
+All firm-level variables come from LSEG Workspace (London Stock Exchange Group, 2024) under an
+institutional licence: the TRBC classification at five levels, country of headquarters and of
+exchange, founding year, the environmental theme, pillar and ESG scores, Scope 1, Scope 2 and
+Scope 3 CO2-equivalent emissions with the estimation method flag, energy, water and waste
+quantities, eight financial and employment items, and two reporting fields. Each field is mapped
+to its analysis variable in `variable_dictionary.csv`, which also records the transformation, the
+role the variable plays in the analysis, and the source cited for the construct where the
+literature supplies one.
 
-## Contents
-| File | Purpose |
-|---|---|
-| `reproduce_paper3.py` | Regenerates Tables 3, 4, 5 (and industry-FE robustness when available) |
-| `variable_dictionary.csv` | Definition, operationalisation, source field and role of every variable |
-| `industry_wikidata.csv` | Industry/sector per firm (public, from Wikidata) for the industry-FE robustness |
-| `fetch_industry_wikidata.py` | Rebuilds the industry classification from Wikidata (free, no licence) |
-| `make_figures.py` | Regenerates Figures 1-3 (PNG + vector PDF) from the source data |
-| `make_synthetic_demo.py` | Generates a synthetic dataset with the same schema and relationships |
-| `requirements.txt` | Python dependencies |
-| `.gitignore` | Excludes all data files from version control |
+## Data-access protocol
 
-## Quick start (no licensed data needed)
+Both scripts run inside LSEG Workspace CodeBook, where the session is already authenticated. They
+cannot be run outside a licensed Workspace installation.
+
+1. `lseg_probe_fields.py` tests every candidate field on ten firms and writes
+   `lseg_probe_report.csv`: which field names the service returns, whether the five-year fiscal
+   parameters return five years, what the provider's catalogue holds for any missing concept, and
+   which fields expand into several rows per firm. It pulls no analysis data.
+2. `lseg_pull.py` requests the two extracts for the instrument list it carries and writes
+   `lseg_static.csv` (one row per instrument), `lseg_panel.csv` (one row per firm-year, five
+   fiscal years, newest first) and `lseg_pull_log.csv` (field completeness and any instrument the
+   service failed to return). It takes roughly twenty minutes and saves partial results as it
+   goes.
+3. Download the two extracts into `data/`.
+
+The panel is requested on the fiscal-year frequency from the most recent fiscal year backwards
+(SDate 0 to EDate -4, Frq FY), with all amounts in US dollars. Fiscal year zero is therefore each
+firm's own latest fiscal year and not a common calendar year, which is why every observation
+carries its year explicitly and the pooled specification carries year fixed effects. The
+reporting date travels with the revenue field, so a firm-year with no revenue arrives undated;
+`build_analysis_data.py` dates those rows by their position within the firm's block and flags
+them, and a robustness check drops them.
+
+## Pipeline
+
 ```bash
 pip install -r requirements.txt
-mkdir -p data
-python make_synthetic_demo.py --out data/synthetic_demo.csv
-python reproduce_paper3.py --data-dir data --cross-section synthetic_demo.csv
+python build_analysis_data.py      # data/lseg_*.csv      -> data/analysis_*.csv
+python run_analysis.py             # data/analysis_*.csv  -> results/
+python make_figures.py             # results/             -> the manuscript figures
 ```
-The synthetic output reproduces the *structure* of the findings (disclosure selection, positive
-total, weak/null intensity) but contains NO real company values and must not be cited as results.
 
-## Reproducing the published numbers (licensed users)
-A user with an LSEG/Refinitiv licence regenerates the inputs, places them in `data/`, then runs:
+| Script | Purpose |
+|---|---|
+| `build_analysis_data.py` | Screens the extracts, constructs every analysis variable, and writes the panel, the cross-section, the lagged sample, `sample_flow.csv` and `screening_log.txt` |
+| `run_analysis.py` | Estimates every model and writes the eleven results tables and `summary.txt` |
+| `make_figures.py` | Draws the figures from the screening record and the results tables, as vector PDF, 300 dpi PNG and a caption file |
+| `make_synthetic_demo.py` | Generates synthetic extracts with the same schema |
+| `lseg_probe_fields.py`, `lseg_pull.py` | The data-access protocol above |
+| `variable_dictionary.csv` | Definition, source field, transformation, role and reference for every variable |
+
+Every screening decision is recorded rather than applied silently, so the sample flow reported in
+the paper is generated rather than transcribed. Standard errors are clustered by country group
+throughout.
+
+## What each results file corresponds to in the paper
+
+| File | Table or figure in the paper |
+|---|---|
+| `data/sample_flow.csv`, `data/screening_log.txt` | Table "Sample construction"; Figure "Sample construction" |
+| `results/t01_descriptives.csv` | Table "Descriptive statistics"; Table "Descriptive statistics by sector" |
+| `results/t02_selection_score.csv` | Table "The two selection gates", Panels A and B (rating gate) |
+| `results/t03_correlations.csv` | Table "Pairwise correlations", and the variance inflation factors in its note |
+| `results/t04_main.csv` | Table "Main models" |
+| `results/t05_denominators.csv` | Table "Denominator battery"; Figure "Five intensity denominators" |
+| `results/t06_components.csv` | Table "Measure components and alternative constructions"; Figure "Alternative constructions of the measure" |
+| `results/t07_industry.csv` | Table "Industry heterogeneity"; Figure "Industry heterogeneity" |
+| `results/t08_disclosure.csv` | Table "The two selection gates", Panel C (disclosure gate); Table "Reweighting and robustness", Panel A |
+| `results/t09_lagged.csv` | Table "Lagged and change specifications"; Figure "The 2021 score against 2025 outcomes" |
+| `results/t10_waste.csv` | Table "Waste outcomes" |
+| `results/t11_robustness.csv` | Table "Reweighting and robustness", Panel B |
+| `results/summary.txt` | Every table above rendered for reading |
+
+## Synthetic demonstration
+
+`make_synthetic_demo.py` writes `lseg_static.csv` and `lseg_panel.csv` with the schema, the
+missingness structure and the broad distributions of the real extracts. The firm-level draw is a
+multivariate normal whose means, standard deviations and correlations are the published
+descriptive statistics of the paper; rated and unrated firms are drawn with different means, so
+the selection models have the same kind of gap to estimate. No proprietary value is used and none
+is contained in the output.
+
 ```bash
-python reproduce_paper3.py --data-dir data
+python make_synthetic_demo.py --data-dir synthetic_data
+python build_analysis_data.py --data-dir synthetic_data
+python run_analysis.py --data-dir synthetic_data --results-dir synthetic_results
+python make_figures.py --data-dir synthetic_data --results-dir synthetic_results \
+    --figures-dir synthetic_results/figures
 ```
-Expected `data/` files:
-- `refinitiv_clean_fy0_cross_section.csv` — main cross-section (see data-access protocol below)
-- `waste_recycled.csv` — `Identifier, waste_recycled` (Table 5)
-- `identifiers_trbc.csv` — `Identifier, TRBC_Economic_Sector` (industry-FE robustness)
 
-## Data-access protocol (how to regenerate the proprietary inputs)
-The inputs are built from an LSEG/Refinitiv screener export of listed firms with the following
-fields at FY0: Resource Use Score, Environmental Innovation Score, Environmental Pillar Score,
-CO2 Equivalent Emissions (Total/Scope 1/Scope 2/Scope 3), Total Assets, Company Market Cap,
-Waste Recycled Total, plus Country of Headquarters. The TRBC sector classification is pulled with
-the helper in `trbc_lseg_pull_package/` (run inside LSEG Workspace). Field-to-variable mapping
-is documented in `variable_dictionary.csv`.
+The pipeline runs to completion on these inputs and produces a table for every table in the
+paper. It reproduces the structure of the analysis, not its findings: the numbers are synthetic
+and must not be cited or read as results.
 
-## Method summary (matches the manuscript)
-- Capability score = equal-weight mean of Resource Use and Environmental Innovation theme scores
-  (Environmental Pillar excluded to avoid double counting).
-- Continuous variables winsorised at the 1st/99th percentiles; outcomes in natural logs (zeros dropped).
-- Country-group fixed effects (HQ countries with < 25 firms collapsed to "Other"); HC1 robust SEs.
-- IPW: stabilised weights from the disclosure model, truncated at the 1st/99th percentiles.
+## Requirements
+
+Python 3.10 or later with pandas, numpy, statsmodels, scipy and matplotlib, as listed in
+`requirements.txt`. The two data-access scripts additionally require the `lseg-data` package,
+which is already installed in LSEG Workspace CodeBook and is not needed for anything else.
+
+## Licence
+
+Code released under the MIT licence; see `LICENSE`. The licence covers the code only. The LSEG
+data are the property of London Stock Exchange Group and are not redistributed here.
