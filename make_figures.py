@@ -107,17 +107,18 @@ CAPTIONS = {
         "2025 outcome on the 2021 score with log market capitalisation and "
         "country-group and sector fixed effects; panel (b) adds the 2021--2025 "
         "change in the score to the 2021 level and plots the coefficient on the "
-        "change term. Bars are 95 per cent confidence intervals from standard "
+        "change term for every outcome. Bars are 95 per cent confidence intervals from standard "
         "errors clustered by country group, and the number of firms in each "
         "regression is given on the right.",
     "figure6_heterogeneity":
         "Industry heterogeneity. The split estimates the main model separately "
         "within the carbon-intensive sectors (Energy, Utilities, Basic "
         "Materials) and within all others, with country-group and sector fixed "
-        "effects. The interaction rows carry country-group fixed effects only, "
-        "because sector fixed effects would absorb the moderator; sector carbon "
+        "effects. The interaction rows retain both country-group and sector "
+        "fixed effects, which absorb the level of the moderator but not its "
+        "interaction with a score that varies within sectors; sector carbon "
         "intensity is the median log Scope 1+2 per unit of revenue within the "
-        "firm's sector and year. Bars are 95 per cent confidence intervals from "
+        "firm's sector and year, computed without the firm itself. Bars are 95 per cent confidence intervals from "
         "standard errors clustered by country group, and the number of firms in "
         "each regression is given on the right."}
 
@@ -368,12 +369,13 @@ def figure4_components() -> None:
 
 def figure5_lagged() -> None:
     rows = pd.read_csv(RESULTS / "t09_lagged.csv")
-    level = rows[rows["predictor"] == "rating_base"].set_index("outcome")
+    dated = rows["controls"].fillna("").str.contains("dated")
+    level = rows[(rows["predictor"] == "rating_base") & ~dated].set_index("outcome")
     change = rows[rows["predictor"] == "rating_change"].set_index("outcome")
 
-    fig, axes = plt.subplots(2, 1, figsize=(WIDTH, 4.8),
-                             gridspec_kw={"height_ratios": [3.0, 1.2],
-                                          "hspace": 0.55})
+    fig, axes = plt.subplots(2, 1, figsize=(WIDTH, 6.6),
+                             gridspec_kw={"height_ratios": [3.0, 3.0],
+                                          "hspace": 0.40})
     upper, lower = axes
 
     order = list(OUTCOMES)
@@ -389,15 +391,15 @@ def figure5_lagged() -> None:
     upper.text(0.0, 1.03, "(a)", transform=upper.transAxes, va="bottom",
                fontsize=8)
 
-    changed = ["ln_scope12", "ln_scope12_per_revenue"]
-    positions = [1, 0]
+    changed = [o for o in OUTCOMES if o in change.index]
+    positions = list(range(len(changed) - 1, -1, -1))
     for y, outcome in zip(positions, changed):
         row = change.loc[outcome]
         estimate(lower, y, row["coef"], row["se"], marker="s", face="white",
                  style=(0, (4, 2)))
     lower.set_yticks(positions)
     lower.set_yticklabels([OUTCOMES[o] for o in changed])
-    lower.set_ylim(-0.7, 1.7)
+    lower.set_ylim(-0.7, len(changed) - 0.3)
     coefficient_axes(lower, "Coefficient on the 2021–2025 change (95% CI)",
                      zero_width=1.3)
     sample_sizes(lower, positions, [change.loc[o, "n"] for o in changed], header="")
@@ -417,9 +419,11 @@ def figure6_heterogeneity() -> None:
         ("All other sectors",
          (rows["predictor"] == "rating") & controls.str.contains("other sectors")),
         ("EMI score × carbon-intensive",
-         rows["predictor"] == "rating_x_intensive"),
+         (rows["predictor"] == "rating_x_intensive")
+         & controls.str.contains("sector effects")),
         ("EMI score × sector carbon intensity",
-         rows["predictor"] == "rating_x_sector_intensity")]
+         (rows["predictor"] == "rating_x_sector_intensity")
+         & controls.str.contains("sector effects"))]
     series = [("ln_scope12", "Log Scope 1+2", "o", INK, "-"),
               ("ln_scope12_per_revenue", "Log Scope 1+2 / revenue", "s", "white",
                (0, (4, 2)))]

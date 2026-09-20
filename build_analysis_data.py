@@ -220,6 +220,29 @@ def safe_log(series: pd.Series, label: str, zeros: dict) -> pd.Series:
     return np.log(numeric.where(numeric > 0))
 
 
+def leave_one_out_median(values: pd.Series) -> pd.Series:
+    """Median of the firm's sector and year, computed without the firm itself.
+
+    A sector median that includes the firm makes the moderator a function of
+    the outcome it moderates. The leave-one-out version removes that channel;
+    with a few hundred firms per sector-year the two are nearly identical, but
+    the identity is then a property of the data rather than an assumption.
+    """
+    arr = values.to_numpy(dtype=float)
+    out = np.full(len(arr), np.nan)
+    present = np.flatnonzero(~np.isnan(arr))
+    if len(present) < 3:
+        return pd.Series(out, index=values.index)
+    kept = arr[present]
+    # A firm contributing no intensity of its own has nothing to leave out, so
+    # it takes the ordinary sector median; the moderator is a property of the
+    # sector and is defined for every firm in it.
+    out[:] = np.median(kept)
+    for position, location in enumerate(present):
+        out[location] = np.median(np.delete(kept, position))
+    return pd.Series(out, index=values.index)
+
+
 def winsorise(series: pd.Series, limits=WINSOR_LIMITS) -> pd.Series:
     low, high = series.quantile(limits[0]), series.quantile(limits[1])
     return series.clip(lower=low, upper=high)
@@ -344,10 +367,28 @@ def build(static: pd.DataFrame, panel: pd.DataFrame) -> tuple[pd.DataFrame, dict
     df["gri_reporting"] = df[COL["gri"]].astype(str).str.strip().str.lower().map(
         {"true": 1.0, "false": 0.0})
 
-    # --- disclosure indicators, for the selection models ------------------
-    df["discloses_scope12"] = df["scope12"].notna().astype(int)
-    df["discloses_scope3"] = df["scope3"].notna().astype(int)
-    df["discloses_waste"] = df[COL["waste_total"]].notna().astype(int)
+    # --- availability indicators, for the selection models ----------------
+    # What is observed is whether a figure exists in the provider's database,
+    # which is not the same thing as the firm having published one: where the
+    # estimation-method flag is present it separates the two, and it is absent
+    # for about half the cross-section. The indicators are therefore named for
+    # availability, and two stricter variables carry the reporting distinction:
+    # a firm-reported figure against everything else, and, among firms that
+    # carry both a figure and a flag, whether that figure is the firm's own.
+    df["scope12_available"] = df["scope12"].notna().astype(int)
+    df["scope3_available"] = df["scope3"].notna().astype(int)
+    df["waste_available"] = df[COL["waste_total"]].notna().astype(int)
+    df["scope12_firm_reported"] = (
+        df["scope12"].notna() & (df["emissions_reported"] == 1)).astype(int)
+    # The unflagged figures are the difficulty: coding them as not firm-reported,
+    # as the indicator above does, understates disclosure, so a second strict
+    # variable sets them missing and compares firm-reported figures against
+    # vendor estimates and absent figures alone.
+    unclassified = df["scope12"].notna() & df["emissions_reported"].isna()
+    df["scope12_reported_strict"] = df["scope12_firm_reported"].astype(float).where(
+        ~unclassified)
+    df["reported_given_available"] = df["emissions_reported"].where(
+        df["scope12"].notna())
 
     # --- industry and country ---------------------------------------------
     df["sector"] = df[COL["sector"]]
@@ -368,7 +409,7 @@ def build(static: pd.DataFrame, panel: pd.DataFrame) -> tuple[pd.DataFrame, dict
         median = df.groupby(["sector", "year"])[column].transform("median")
         df["%s_sector_demeaned" % column] = df[column] - median
     df["sector_carbon_intensity"] = df.groupby(["sector", "year"])[
-        "ln_scope12_per_revenue"].transform("median")
+        "ln_scope12_per_revenue"].transform(leave_one_out_median)
 
     # --- winsorised variants ---------------------------------------------
     winsorised = {"%s_w" % column: winsorise(df[column])
@@ -410,13 +451,13 @@ def lagged(df: pd.DataFrame) -> pd.DataFrame:
     """Base-year rating against later-year outcomes, for the dynamic test."""
     base_cols = [COL["ric"], "rating", "rating_resource_use", "rating_innovation",
                  "ln_assets", "ln_revenue", "ln_mcap", "roa", "leverage",
-                 "sector", "country_group", "firm_age"]
+                 "sector", "country_group", "firm_age", "year_imputed"]
     base = df[(df["year"] == LAG_BASE_YEAR) & df["scored"]][base_cols]
 
     outcome_cols = [COL["ric"], "scope12", "scope3", "ln_scope12", "ln_scope3",
                     "ln_scope12_per_revenue", "ln_scope12_per_assets",
                     "ln_scope12_per_employees", "ln_scope12_per_energy",
-                    "waste_recycled_rate", "rating"]
+                    "waste_recycled_rate", "rating", "year_imputed"]
     outcome = df[df["year"] == LAG_OUTCOME_YEAR][outcome_cols]
 
     merged = base.merge(outcome, on=COL["ric"], how="inner",

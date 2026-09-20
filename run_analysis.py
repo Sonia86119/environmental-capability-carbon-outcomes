@@ -13,7 +13,7 @@ Output (results/):
     t05_denominators.csv            the same relationship under six denominators
     t06_components.csv              themes separately, principal component, weights
     t07_industry.csv                fixed effects, intensive split, interaction
-    t08_disclosure.csv              disclosure selection and reweighted estimates
+    t08_availability.csv            availability selection and reweighted estimates
     t09_lagged.csv                  earlier rating against later outcomes
     t10_waste.csv                   recycling rate and tonnage
     t11_robustness.csv              alternative specifications
@@ -107,7 +107,7 @@ def pool_rare_levels(series: pd.Series, outcome: pd.Series,
     """Collapse categories that are small or perfectly predict the outcome.
 
     A handful of sectors and countries here contain only a few firms, all of
-    which disclose. Left alone they separate the likelihood perfectly and the
+    which carry a figure. Left alone they separate the likelihood perfectly and the
     model will not identify; pooling them keeps their firms in the sample.
     """
     counts = series.value_counts()
@@ -391,6 +391,11 @@ def t07_industry(cs: pd.DataFrame) -> None:
                 row["controls"] += " | %s" % label
                 rows.append(row)
 
+        # Sector fixed effects absorb the level of a sector-level moderator but
+        # not its interaction with a score that varies within sectors, so each
+        # interaction is estimated both ways: with country effects alone, where
+        # the level is identified, and with sector effects retained, where it
+        # is absorbed and only the interaction is read.
         interaction = cs.copy()
         interaction["rating_x_intensive"] = interaction[RATING] * interaction["carbon_intensive"]
         row = fit(interaction, outcome,
@@ -398,6 +403,11 @@ def t07_industry(cs: pd.DataFrame) -> None:
                   ["country_group"])
         if row:
             row["controls"] = "interaction with carbon-intensive sector"
+            rows.append(row)
+        row = fit(interaction, outcome, ["rating_x_intensive", RATING, "ln_mcap"],
+                  ["country_group", "sector"])
+        if row:
+            row["controls"] = "interaction with carbon-intensive sector | sector effects"
             rows.append(row)
 
         if "sector_carbon_intensity" in cs.columns:
@@ -410,28 +420,37 @@ def t07_industry(cs: pd.DataFrame) -> None:
             if row:
                 row["controls"] = "interaction with sector carbon intensity"
                 rows.append(row)
+            row = fit(continuous, outcome,
+                      ["rating_x_sector_intensity", RATING, "ln_mcap"],
+                      ["country_group", "sector"])
+            if row:
+                row["controls"] = "interaction with sector carbon intensity | sector effects"
+                rows.append(row)
     table("t07_industry", rows, "fixed effects, split, interaction")
 
 
-def t08_disclosure(cs: pd.DataFrame) -> None:
+def t08_availability(cs: pd.DataFrame) -> None:
     """The second selection gate, and estimates reweighted for it."""
     rows = []
     covariates = ["rating", "ln_mcap", "ln_assets", "roa", "leverage", "firm_age",
                   "free_float"]
     covariates = [c for c in covariates if c in cs.columns]
 
-    for outcome in ["discloses_scope12", "discloses_scope3"]:
-        model, frame = logit(cs, outcome, covariates, ["sector", "country_group"])
-        if model is None:
-            continue
+    def coefficients(model, outcome: str, note: str = "sector, country") -> None:
         for name in model.params.index:
             if name.startswith("C(") or name == "Intercept":
                 continue
             rows.append({"outcome": outcome, "predictor": name,
                          "coef": model.params[name], "se": model.bse[name],
                          "p": model.pvalues[name], "n": int(model.nobs),
-                         "r2": model.prsquared, "controls": "sector, country",
+                         "r2": model.prsquared, "controls": note,
                          "fixed_effects": "sector, country", "weighted": "logit"})
+
+    for outcome in ["scope12_available", "scope3_available"]:
+        model, frame = logit(cs, outcome, covariates, ["sector", "country_group"])
+        if model is None:
+            continue
+        coefficients(model, outcome)
 
         # Inverse probability weights, with the overlap actually reported.
         propensity = model.predict(frame).clip(0.02, 0.98)
@@ -446,28 +465,42 @@ def t08_disclosure(cs: pd.DataFrame) -> None:
                      "controls": "min and max propensity; r2 column is effective sample size",
                      "weighted": "diagnostic"})
 
-        target = "ln_scope12" if outcome == "discloses_scope12" else "ln_scope3"
+        target = "ln_scope12" if outcome == "scope12_available" else "ln_scope3"
         intensity = target + "_per_revenue"
         for response in (target, intensity):
-            if response in weighted.columns:
-                rows.append(fit(weighted, response, [RATING, "ln_mcap"],
-                                ["country_group", "sector"], weights="ipw"))
+            if response not in weighted.columns:
+                continue
+            rows.append(fit(weighted, response, [RATING, "ln_mcap"],
+                            ["country_group", "sector"], weights="ipw"))
+            # The same firms, unweighted. Without this the weighted estimate is
+            # compared with a main model estimated on a different complete-case
+            # sample, and weighting and sample cannot be told apart.
+            row = fit(weighted, response, [RATING, "ln_mcap"],
+                      ["country_group", "sector"])
+            if row:
+                row["controls"] += " | unweighted on the weighting sample"
+                rows.append(row)
 
-        # Entropy balancing. The estimation sample is the disclosing firms, so
-        # they are reweighted until their covariate means match the whole rated
-        # population, disclosers and non-disclosers together. Balance then holds
+        # Entropy balancing. The estimation sample is the firms whose figure is
+        # observed, so they are reweighted until their covariate means match the
+        # whole rated population, observed and unobserved together. Balance holds
         # by construction rather than being hoped for after weighting.
         balance_covariates = [c for c in ["ln_mcap", "ln_assets", "roa", "leverage",
                                           "firm_age"] if c in cs.columns]
         complete = cs.dropna(subset=balance_covariates + [outcome]).copy()
-        disclosers = complete[complete[outcome] == 1]
-        if len(disclosers) > 50 and len(complete) > len(disclosers) + 20:
-            weights = entropy_balance(complete, disclosers, balance_covariates)
+        observed = complete[complete[outcome] == 1]
+        if len(observed) > 50 and len(complete) > len(observed) + 20:
+            weights = entropy_balance(complete, observed, balance_covariates)
             if weights is not None:
-                balanced = disclosers.copy()
+                balanced = observed.copy()
                 balanced["eb"] = weights
                 row = fit(balanced, target, [RATING, "ln_mcap"],
                           ["country_group", "sector"], weights="eb")
+                baseline = fit(balanced, target, [RATING, "ln_mcap"],
+                               ["country_group", "sector"])
+                if baseline:
+                    baseline["controls"] += " | unweighted on the balancing sample"
+                    rows.append(baseline)
                 if row:
                     row["weighted"] = "entropy balanced"
                     rows.append(row)
@@ -476,12 +509,26 @@ def t08_disclosure(cs: pd.DataFrame) -> None:
                         "outcome": outcome,
                         "predictor": "balance: %s" % covariate,
                         "coef": complete[covariate].mean(),
-                        "se": disclosers[covariate].mean(),
-                        "t": np.average(disclosers[covariate], weights=weights),
-                        "n": len(disclosers),
-                        "controls": "population mean | discloser mean | reweighted mean",
+                        "se": observed[covariate].mean(),
+                        "t": np.average(observed[covariate], weights=weights),
+                        "n": len(observed),
+                        "controls": "population mean | observed mean | reweighted mean",
                         "weighted": "entropy balanced"})
-    table("t08_disclosure", rows, "selection and reweighting")
+    # The stricter reading of the gate. The models above take a figure's
+    # existence as the outcome; these two require the firm's own number, first
+    # against the whole rated cross-section and then among the firms carrying
+    # both a figure and an estimation-method flag, where the flag itself is
+    # the outcome. If the score only predicted the presence of a vendor
+    # estimate, it would lose its association here.
+    for outcome in ("scope12_firm_reported", "scope12_reported_strict",
+                    "reported_given_available"):
+        if outcome not in cs.columns:
+            continue
+        model, _ = logit(cs, outcome, covariates, ["sector", "country_group"])
+        if model is not None:
+            coefficients(model, outcome, "sector, country | firm-reported figure")
+
+    table("t08_availability", rows, "selection and reweighting")
 
 
 def t09_lagged(lag: pd.DataFrame) -> None:
@@ -499,13 +546,25 @@ def t09_lagged(lag: pd.DataFrame) -> None:
     if {"rating_base", "rating_outcome"}.issubset(lag.columns):
         change = lag.dropna(subset=["rating_base", "rating_outcome"]).copy()
         change["rating_change"] = change["rating_outcome"] - change["rating_base"]
-        for outcome in ("ln_scope12", "ln_scope12_per_revenue"):
-            if outcome in change.columns:
-                row = fit(change, outcome, ["rating_change", "rating_base", "ln_mcap"],
-                          ["country_group", "sector"])
-                if row:
-                    row["controls"] = "change in rating over the window"
-                    rows.append(row)
+        for outcome in outcomes:
+            row = fit(change, outcome, ["rating_change", "rating_base", "ln_mcap"],
+                      ["country_group", "sector"])
+            if row:
+                row["controls"] = "change in rating over the window"
+                rows.append(row)
+
+    # Firms whose 2021 and 2025 fiscal years both carry an authoritative date.
+    # The lagged design was added to answer a temporal criticism, so it should
+    # not rest on years assigned by position within the extract.
+    flags = ["year_imputed_base", "year_imputed_outcome"]
+    if set(flags).issubset(lag.columns):
+        dated = lag[~(lag[flags[0]].astype(bool) | lag[flags[1]].astype(bool))]
+        for outcome in outcomes:
+            row = fit(dated, outcome, ["rating_base", "ln_mcap"],
+                      ["country_group", "sector"])
+            if row:
+                row["controls"] += " | dated observations only"
+                rows.append(row)
     table("t09_lagged", rows, "earlier rating, later outcome")
 
 
@@ -618,7 +677,7 @@ def main() -> int:
     t05_denominators(cs)
     t06_components(cs)
     t07_industry(cs)
-    t08_disclosure(cs)
+    t08_availability(cs)
     t09_lagged(lag)
     t10_waste(cs)
     t11_robustness(cs, panel)

@@ -81,7 +81,7 @@ throughout.
 | `results/t05_denominators.csv` | Table "Denominator battery"; Figure "Five intensity denominators" |
 | `results/t06_components.csv` | Table "Measure components and alternative constructions"; Figure "Alternative constructions of the measure" |
 | `results/t07_industry.csv` | Table "Industry heterogeneity"; Figure "Industry heterogeneity" |
-| `results/t08_disclosure.csv` | Table "The two selection gates", Panel C (disclosure gate); Table "Reweighting and robustness", Panel A |
+| `results/t08_availability.csv` | Table "The two selection gates", Panel C (availability gate); Table "Reweighting and robustness", Panel A |
 | `results/t09_lagged.csv` | Table "Lagged and change specifications"; Figure "The 2021 score against 2025 outcomes" |
 | `results/t10_waste.csv` | Table "Waste outcomes" |
 | `results/t11_robustness.csv` | Table "Reweighting and robustness", Panel B |

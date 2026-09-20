@@ -264,11 +264,11 @@ def theme_scores(rng: np.random.Generator, frame: pd.DataFrame) -> pd.DataFrame:
     return frame
 
 
-def disclosure(rng: np.random.Generator, frame: pd.DataFrame) -> pd.DataFrame:
+def availability(rng: np.random.Generator, frame: pd.DataFrame) -> pd.DataFrame:
     """Decide which firms report each physical quantity.
 
     Disclosure rises with scale and with the score, which is the relationship
-    the disclosure gate estimates; the intercepts are set so that the share
+    the availability gate estimates; the intercepts are set so that the share
     reporting each item matches the sample-construction table.
     """
     frame = frame.copy()
@@ -491,7 +491,7 @@ def generate(rng: np.random.Generator) -> tuple[pd.DataFrame, pd.DataFrame]:
 
     firms = pd.concat([rated, unrated, non_operating], ignore_index=True)
     firms["operating"] = np.arange(len(firms)) < operating_count
-    firms = disclosure(rng, firms)
+    firms = availability(rng, firms)
     firms = reporting_fields(rng, firms)
 
     labels = classification(rng, len(firms))

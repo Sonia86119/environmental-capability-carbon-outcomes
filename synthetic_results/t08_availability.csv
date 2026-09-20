@@ -1,0 +1,60 @@
+outcome,predictor,coef,se,p,n,r2,controls,fixed_effects,weighted,t
+scope12_available,rating,0.02483552990209182,0.004751043352220212,1.7192482228937167e-07,2039,0.14382280409868675,"sector, country","sector, country",logit,
+scope12_available,ln_mcap,0.0015284571448949793,0.10715304101278812,0.9886191657148197,2039,0.14382280409868675,"sector, country","sector, country",logit,
+scope12_available,ln_assets,0.24927474451094095,0.09242440319505058,0.006995333802916847,2039,0.14382280409868675,"sector, country","sector, country",logit,
+scope12_available,roa,0.22631883769664873,0.7359913704247448,0.7584612809823601,2039,0.14382280409868675,"sector, country","sector, country",logit,
+scope12_available,leverage,-0.602405367837719,0.49957018186828583,0.2278763638185115,2039,0.14382280409868675,"sector, country","sector, country",logit,
+scope12_available,firm_age,-0.0005649236582198953,0.0032839072990185343,0.8634155992957502,2039,0.14382280409868675,"sector, country","sector, country",logit,
+scope12_available,free_float,0.005032144362187395,0.003544108987910167,0.15564796861580765,2039,0.14382280409868675,"sector, country","sector, country",logit,
+scope12_available,propensity overlap,0.37184153668332215,0.98,,2039,386.1485325965451,min and max propensity; r2 column is effective sample size,,diagnostic,
+ln_scope12,rating,0.018753711755593778,0.0031349079144553553,2.201154244411087e-09,1797,0.23264367947224218,ln_mcap,"country_group, sector",ipw,5.9822209351409175
+ln_scope12,rating,0.01888516697295166,0.003142944091010059,1.8695854313325438e-09,1797,0.22489563845073857,ln_mcap | unweighted on the weighting sample,"country_group, sector",no,6.00875053010646
+ln_scope12_per_revenue,rating,0.009879387208140678,0.004131929602168082,0.01680317835363937,1514,0.06313874122643526,ln_mcap,"country_group, sector",ipw,2.390986333106165
+ln_scope12_per_revenue,rating,0.009929625513043258,0.004077853532072396,0.014891263266153287,1514,0.06175416024295355,ln_mcap | unweighted on the weighting sample,"country_group, sector",no,2.4350127916430946
+ln_scope12,rating,0.01888516697295166,0.003142944091010059,1.8695854313325438e-09,1797,0.22489563845073857,ln_mcap | unweighted on the balancing sample,"country_group, sector",no,6.00875053010646
+ln_scope12,rating,0.01892613177537846,0.0031299516266073716,1.4776847280292304e-09,1797,0.22287760787975797,ln_mcap,"country_group, sector",entropy balanced,6.046780919707996
+scope12_available,balance: ln_mcap,21.341933621991135,21.444652667178605,,1858,,population mean | observed mean | reweighted mean,,entropy balanced,21.341933431869855
+scope12_available,balance: ln_assets,21.85779262923374,21.98651673469031,,1858,,population mean | observed mean | reweighted mean,,entropy balanced,21.857792838102608
+scope12_available,balance: roa,0.03238128865173106,0.032972442745073285,,1858,,population mean | observed mean | reweighted mean,,entropy balanced,0.0323811035034459
+scope12_available,balance: leverage,0.25562493625748856,0.2558248521325785,,1858,,population mean | observed mean | reweighted mean,,entropy balanced,0.255625087187153
+scope12_available,balance: firm_age,42.737126042177536,43.018837459634014,,1858,,population mean | observed mean | reweighted mean,,entropy balanced,42.73712332602293
+scope3_available,rating,0.04022782383086142,0.004105072071313211,1.1309791993708357e-22,2039,0.19500957671122154,"sector, country","sector, country",logit,
+scope3_available,ln_mcap,0.3676327743750621,0.09008285041986056,4.483237085008512e-05,2039,0.19500957671122154,"sector, country","sector, country",logit,
+scope3_available,ln_assets,-0.09071413465392512,0.07649421647535623,0.23566363474050367,2039,0.19500957671122154,"sector, country","sector, country",logit,
+scope3_available,roa,1.3168408870625707,0.6114435016495001,0.03126691254692646,2039,0.19500957671122154,"sector, country","sector, country",logit,
+scope3_available,leverage,-0.2544423343757671,0.40854951733544775,0.5334196663709919,2039,0.19500957671122154,"sector, country","sector, country",logit,
+scope3_available,firm_age,-0.0006066871013749773,0.002656211414358753,0.8193328269916361,2039,0.19500957671122154,"sector, country","sector, country",logit,
+scope3_available,free_float,-0.004491149933737167,0.0029774577868412052,0.1314562543484626,2039,0.19500957671122154,"sector, country","sector, country",logit,
+scope3_available,propensity overlap,0.1731587391303517,0.98,,2039,474.4249760196261,min and max propensity; r2 column is effective sample size,,diagnostic,
+ln_scope3,rating,0.016055527696428585,0.0032805803761713987,9.8750605641906e-07,1729,0.23538514068718253,ln_mcap,"country_group, sector",ipw,4.894111972701059
+ln_scope3,rating,0.016220965897062806,0.0029879897012551893,5.675896356618535e-08,1729,0.22300381870968866,ln_mcap | unweighted on the weighting sample,"country_group, sector",no,5.428722157324951
+ln_scope3_per_revenue,rating,0.008147287464893857,0.003442859081368497,0.01796053584265319,1449,0.06402826893848823,ln_mcap,"country_group, sector",ipw,2.3664307113189786
+ln_scope3_per_revenue,rating,0.008280445686479945,0.003089347386280551,0.007355137605321872,1449,0.05917331856325092,ln_mcap | unweighted on the weighting sample,"country_group, sector",no,2.6803219745543947
+ln_scope3,rating,0.016220965897062806,0.0029879897012551893,5.675896356618535e-08,1729,0.22300381870968866,ln_mcap | unweighted on the balancing sample,"country_group, sector",no,5.428722157324951
+ln_scope3,rating,0.01625705487803297,0.003148454252153813,2.423699128028244e-07,1729,0.2190004206432833,ln_mcap,"country_group, sector",entropy balanced,5.163503604002424
+scope3_available,balance: ln_mcap,21.341933621991135,21.545683086833666,,1730,,population mean | observed mean | reweighted mean,,entropy balanced,21.341937448885943
+scope3_available,balance: ln_assets,21.85779262923374,22.066148881333305,,1730,,population mean | observed mean | reweighted mean,,entropy balanced,21.857796167915534
+scope3_available,balance: roa,0.03238128865173106,0.0368763809528686,,1730,,population mean | observed mean | reweighted mean,,entropy balanced,0.03238100694517237
+scope3_available,balance: leverage,0.25562493625748856,0.256089097142441,,1730,,population mean | observed mean | reweighted mean,,entropy balanced,0.25562366706385353
+scope3_available,balance: firm_age,42.737126042177536,42.958959537572255,,1730,,population mean | observed mean | reweighted mean,,entropy balanced,42.737087382348705
+scope12_firm_reported,rating,0.0030106927054160807,0.002483666897543664,0.22543711161973123,2039,0.01643753312838181,"sector, country | firm-reported figure","sector, country",logit,
+scope12_firm_reported,ln_mcap,-0.04050307225784904,0.06037460786350852,0.5023080020584401,2039,0.01643753312838181,"sector, country | firm-reported figure","sector, country",logit,
+scope12_firm_reported,ln_assets,0.04909660624427727,0.05137914743756753,0.33928721903524994,2039,0.01643753312838181,"sector, country | firm-reported figure","sector, country",logit,
+scope12_firm_reported,roa,-0.1921036959068882,0.40959982283187535,0.6390672295516967,2039,0.01643753312838181,"sector, country | firm-reported figure","sector, country",logit,
+scope12_firm_reported,leverage,0.0641572915299881,0.27870276264642035,0.8179365972509769,2039,0.01643753312838181,"sector, country | firm-reported figure","sector, country",logit,
+scope12_firm_reported,firm_age,0.0021203297272465054,0.0017842567594254745,0.23469373505004232,2039,0.01643753312838181,"sector, country | firm-reported figure","sector, country",logit,
+scope12_firm_reported,free_float,0.0021509031011905017,0.002029032183653078,0.28911567960186935,2039,0.01643753312838181,"sector, country | firm-reported figure","sector, country",logit,
+scope12_reported_strict,rating,0.007443531454186774,0.0034773275285560766,0.03230714099375391,1121,0.056957299056185184,"sector, country | firm-reported figure","sector, country",logit,
+scope12_reported_strict,ln_mcap,0.004969011004053426,0.0850965862762037,0.9534359083097272,1121,0.056957299056185184,"sector, country | firm-reported figure","sector, country",logit,
+scope12_reported_strict,ln_assets,0.10634808071175811,0.07386875952573552,0.1499552529153422,1121,0.056957299056185184,"sector, country | firm-reported figure","sector, country",logit,
+scope12_reported_strict,roa,0.08173449866151666,0.5938301990143274,0.8905253268321838,1121,0.056957299056185184,"sector, country | firm-reported figure","sector, country",logit,
+scope12_reported_strict,leverage,-0.11758475942369959,0.3891888221695828,0.7625546470458595,1121,0.056957299056185184,"sector, country | firm-reported figure","sector, country",logit,
+scope12_reported_strict,firm_age,0.0029896358689501744,0.002539049490331392,0.2390109081488806,1121,0.056957299056185184,"sector, country | firm-reported figure","sector, country",logit,
+scope12_reported_strict,free_float,0.004683524424492343,0.002819270997844596,0.09666250118050791,1121,0.056957299056185184,"sector, country | firm-reported figure","sector, country",logit,
+reported_given_available,rating,-0.004106050000400647,0.004207817038728497,0.32915626588106484,940,0.03197089380717044,"sector, country | firm-reported figure","sector, country",logit,
+reported_given_available,ln_mcap,0.048803427988598526,0.10154054863648422,0.6307795311242663,940,0.03197089380717044,"sector, country | firm-reported figure","sector, country",logit,
+reported_given_available,ln_assets,-0.025125776619145994,0.08746039059963295,0.7738965730214731,940,0.03197089380717044,"sector, country | firm-reported figure","sector, country",logit,
+reported_given_available,roa,-0.39517782748425345,0.7088906483700175,0.5772135216674237,940,0.03197089380717044,"sector, country | firm-reported figure","sector, country",logit,
+reported_given_available,leverage,0.003315366393147714,0.4674977888802254,0.9943416684557813,940,0.03197089380717044,"sector, country | firm-reported figure","sector, country",logit,
+reported_given_available,firm_age,0.0048925735009914505,0.003070509877102627,0.11106880181463925,940,0.03197089380717044,"sector, country | firm-reported figure","sector, country",logit,
+reported_given_available,free_float,0.0023875887554975408,0.003411187758029614,0.48397173363261536,940,0.03197089380717044,"sector, country | firm-reported figure","sector, country",logit,
